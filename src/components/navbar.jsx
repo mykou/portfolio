@@ -20,17 +20,18 @@ const MenuToggle = styled.input`
 const LeftMenu = styled.div`
 	grid-column: 1;
 	align-self: center;
-	@media only screen and (max-width: 768px) {		   
+	@media only screen and (max-width: 480px) {		   
 		display: grid;		
   	grid-row: 2;
   	grid-column-start: 1;
 		grid-column-end: 4;		  	  		 	 
 		max-height: 0;
 		overflow: hidden;
-		transition:max-height .4s ease-out;
+		transition:max-height .4s cubic-bezier(0, 1, 0, 1);
 		#nav-toggle:checked ~ & {
 			height: auto;
-			max-height:120px;
+			max-height:200px;
+			transition: max-height 0.4s ease-in-out;
 		}		
 	}
 	
@@ -42,6 +43,11 @@ const LogoLink = styled(props => <Link {...props} />)`
 	text-shadow: none;
 	background-image: none;
 	margin: auto;	
+	transition: all 1s;
+	&:hover {
+		color: #006450;
+		text-shadow: 1px 1px 2px		
+	}
 `
 
 const MenuLink = styled(props => <Link {...props} />)`
@@ -50,8 +56,14 @@ const MenuLink = styled(props => <Link {...props} />)`
 	background-image: none;
 	padding-left: 1em;
 	display: inline-block;
-	margin: 0.5em;
-	@media only screen and (max-width: 768px) {
+	margin: 0.5em 0;
+	transition: all 1s;
+	&:hover {
+		color: #006450;
+		text-shadow: 0.5px 0.5px 1px		
+	}
+
+	@media only screen and (max-width: 480px) {
 		padding-left: 0;
 		margin-left: 1em;
 		margin-bottom: 0;
@@ -60,7 +72,7 @@ const MenuLink = styled(props => <Link {...props} />)`
 
 const HamburgerLabel = styled.label`
 	display: none;
-	@media only screen and (max-width: 768px) {
+	@media only screen and (max-width: 480px) {
 		display: inline;
 		align-self: center;
 		margin-left: 1em;
@@ -68,38 +80,17 @@ const HamburgerLabel = styled.label`
 `
 const LinkText = styled.span`
 	font-size: 28px;
-	@media only screen and (max-width: 768px) {
-	
-	}
 `
 
 const MenuIcon = styled.img`	
 	margin-bottom: 0;
-	@media only screen and (max-width: 768px) {			
+	@media only screen and (max-width: 480px) {			
 		position: relative;
 		top: 50%;
 		transform: translateY(-50%);
 
 	}
 `
-/*
-class Navbar extends React.Component {
-	render() {
-		return (
-			<div style={{ color: `purple`}}>
-				<Link to="/about/">About</Link>			
-				<Link to="/css-modules/">CSS</Link>				
-				<Header headerText="Main Pages"/>
-				<p>World</p>
-				<img src="https://source.unsplash.com/random/400x200" alt="" />
-			</div>
-		)
-	}
-
-}
-
-export default Navbarn
-*/
 
 export default () => (
 	<NavContainer>
