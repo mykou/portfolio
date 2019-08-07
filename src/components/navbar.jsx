@@ -1,20 +1,16 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
+import MenuIcon from '../components/menu'
 
 const NavContainer = styled.div`
 	width: 100%;
 `
 
 const Nav = styled.nav`
-  max-width: 1720px;
   margin: 0 auto;  
   display: grid;
   grid-template-columns: 1fr auto 1fr;   
-`
-
-const MenuToggle = styled.input`
-	display: none;	
 `
 
 const LeftMenu = styled.div`
@@ -28,7 +24,7 @@ const LeftMenu = styled.div`
 		max-height: 0;
 		overflow: hidden;
 		transition:max-height .4s cubic-bezier(0, 1, 0, 1);
-		#nav-toggle:checked ~ & {
+		&.show {
 			height: auto;
 			max-height:200px;
 			transition: max-height 0.4s ease-in-out;
@@ -43,7 +39,7 @@ const LogoLink = styled(props => <Link {...props} />)`
 	text-shadow: none;
 	background-image: none;
 	margin: auto;	
-	transition: all 1s;
+	transition: all 0.7s;
 	&:hover {
 		color: #006450;
 		text-shadow: 1px 1px 2px		
@@ -57,7 +53,7 @@ const MenuLink = styled(props => <Link {...props} />)`
 	padding-left: 1em;
 	display: inline-block;
 	margin: 0.5em 0;
-	transition: all 1s;
+	transition: all 0.7s;
 	&:hover {
 		color: #006450;
 		text-shadow: 0.5px 0.5px 1px		
@@ -70,44 +66,61 @@ const MenuLink = styled(props => <Link {...props} />)`
 	}
 `
 
-const HamburgerLabel = styled.label`
+const Hamburger = styled.div`
 	display: none;
 	@media only screen and (max-width: 480px) {
 		display: inline;
-		align-self: center;
-		margin-left: 1em;
+		align-self: center;		
 	}
 `
 const LinkText = styled.span`
 	font-size: 28px;
 `
 
-const MenuIcon = styled.img`	
-	margin-bottom: 0;
-	@media only screen and (max-width: 480px) {			
-		position: relative;
-		top: 50%;
-		transform: translateY(-50%);
-
-	}
+const IconContainer = styled.div`	
+	margin: 1em;
 `
 
-export default () => (
-	<NavContainer>
-		<Nav>			
-			<MenuToggle type="checkbox" id="nav-toggle"/>
-			<div>
-      <HamburgerLabel htmlFor="nav-toggle">      	
-        <MenuIcon src="/hamburger.png" alt="" width="40px"/>
-      </HamburgerLabel>     
-      </div>
-			<LeftMenu>
-				<MenuLink to="/about/">About</MenuLink>
-				<MenuLink to="/contact/">Contact</MenuLink>
-			</LeftMenu>
-			<LogoLink to="/">
-				  <LinkText>MICHAEL</LinkText>
-			</LogoLink>
-		</Nav>
-	</NavContainer>
-)
+
+
+class Navbar extends React.Component {
+	
+	constructor(props){
+		super(props);
+		this.state = { toggle: false };			
+	}
+
+	toggleMenu = () => {
+		this.setState(state => ({
+      toggle: !state.toggle
+    }));    
+	}
+
+	render() {
+		return (
+			<NavContainer>
+				<Nav>							
+					<div>
+		      <Hamburger>
+		      	<IconContainer>
+		      		<MenuIcon className={this.state.toggle ? 'open' : ''}
+		        					onClick={this.toggleMenu}
+		       	 />
+		      	</IconContainer>     	
+		        
+		      </Hamburger>     
+		      </div>
+					<LeftMenu className={this.state.toggle ? 'show' : ''}>
+						<MenuLink to="/about/">About</MenuLink>
+						<MenuLink to="/contact/">Contact</MenuLink>
+					</LeftMenu>
+					<LogoLink to="/">
+						  <LinkText>MICHAEL</LinkText>
+					</LogoLink>
+				</Nav>
+			</NavContainer>
+		)
+	}
+}
+
+export default Navbar
