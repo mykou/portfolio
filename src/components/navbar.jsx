@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
-import MenuIcon from '../components/menu'
+import MenuIcon from 'src/components/menu'
 
 const NavContainer = styled.div`
 	width: 100%;
