@@ -105,10 +105,8 @@ class Navbar extends React.Component {
 		      <Hamburger>
 		      	<IconContainer>
 		      		<MenuIcon className={this.state.toggle ? 'open' : ''}
-		        					onClick={this.toggleMenu}
-		       	 />
-		      	</IconContainer>     	
-		        
+		        					onClick={this.toggleMenu}/>
+		      	</IconContainer>     			        
 		      </Hamburger>     
 		      </div>
 					<LeftMenu className={this.state.toggle ? 'show' : ''}>
