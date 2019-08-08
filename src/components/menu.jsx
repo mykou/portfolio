@@ -71,11 +71,9 @@ const IconContainer = styled.div`
 	  width: 0%;
 	  left: 50%;
 	}
-
 `
 
 class MenuIcon extends React.Component {		
-
 	render() {
 		return (
 			<IconContainer {...this.props}>

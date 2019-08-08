@@ -26,7 +26,7 @@ const LeftMenu = styled.div`
 		grid-column-end: 4;		  	  		 	 
 		max-height: 0;
 		overflow: hidden;
-		transition:max-height .4s cubic-bezier(0, 1, 0, 1);
+		transition:max-height 1s cubic-bezier(0, 1, 0, 1);
 		&.show {
 			height: auto;
 			max-height:200px;
@@ -45,7 +45,7 @@ const LogoLink = styled(props => <Link {...props} />)`
 	transition: all 0.7s;
 	&:hover {
 		color: #006450;
-		text-shadow: 1px 1px 2px		
+		text-shadow: 0.5px 0.5px 3px		
 	}
 `
 
@@ -83,8 +83,6 @@ const LinkText = styled.span`
 const IconContainer = styled.div`	
 	margin: 1em;
 `
-
-
 
 class Navbar extends React.Component {
 	

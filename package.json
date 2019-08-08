@@ -20,7 +20,6 @@
     "react": "^16.8.6",
     "react-bootstrap": "^1.0.0-beta.9",
     "react-dom": "^16.8.6",
-    "react-image": "^2.1.3",
     "react-typography": "^0.16.19",
     "styled-components": "^4.3.2",
     "typography": "^0.16.19",
