@@ -4,6 +4,9 @@ import fairyGateTheme from "typography-theme-fairy-gates"
 fairyGateTheme.overrideThemeStyles = ({ rhythm }, options) => ({
   'h1,h2,h3,h4,h5,h6': {
     color: `#1ca086`   
+  },
+  'a': {
+  	backgroundImage: `none`
   }
 })
 

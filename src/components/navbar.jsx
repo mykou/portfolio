@@ -37,15 +37,15 @@ const LeftMenu = styled.div`
 `
 
 const LogoLink = styled(props => <Link {...props} />)`
+  display: none;
   grid-column: 2;
 	text-decoration: none;
-	text-shadow: none;
-	background-image: none;
+	text-shadow: none;	
 	margin: auto;	
 	transition: all 0.7s;
 	&:hover {
 		color: #006450;
-		text-shadow: 0.5px 0.5px 3px		
+		text-shadow: 0px 0px 0.5px		
 	}
 `
 
@@ -59,7 +59,7 @@ const MenuLink = styled(props => <Link {...props} />)`
 	transition: all 0.7s;
 	&:hover {
 		color: #006450;
-		text-shadow: 0.5px 0.5px 1px		
+		text-shadow: 0px 0px 1px		
 	}
 
 	@media only screen and (max-width: 480px) {

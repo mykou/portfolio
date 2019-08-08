@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import Navbar from 'src/components/navbar'
+import SocialIcons from 'src/components/socialIcons'
 
 const IntroductionContainer = styled.div`
 	min-height: 100vh;
@@ -83,6 +84,7 @@ class Introduction extends React.Component {
 						<Picture src='/blank-profile.png' alt=''/>
 						<Greeting>Hello, I'm Michael!</Greeting>
 						<TagLine/>
+						<SocialIcons/>
 					</IntroWrapper>
 				</Main>
 			</IntroductionContainer>			

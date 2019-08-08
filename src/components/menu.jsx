@@ -1,3 +1,8 @@
+/*
+Adapted from https://codepen.io/designcouch/pen/Atyop
+Author: Jesse Couch - https://codepen.io/designcouch
+*/
+
 import React from "react"
 import styled from "styled-components"
 
