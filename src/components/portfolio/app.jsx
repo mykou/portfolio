@@ -3,10 +3,8 @@ import Introduction from './sections/introduction'
 
 class App extends React.Component {
 	render() {
-		return (
-			<div>		
-				<Introduction/>		
-			</div>			
+		return (			
+			<Introduction/>								
 		)
 	}
 }
