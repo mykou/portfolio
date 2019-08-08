@@ -41,18 +41,11 @@ const TagContainer = styled.div`
 `
 
 const TagWrapper = styled.div`
-	margin-top : 0.5em;
+	margin: 0.5em 0.5em 0 0.5em;
 	background: #9cdfd2;
 `
 const Tag = styled.span`
 	padding: .065rem .375rem .125rem;
-`
-
-const Dot = styled.div`
-	&:after {
-		content: ' ';
-		padding: 0.5rem;
-	}
 `
 
 function TagLine(){
@@ -60,12 +53,10 @@ function TagLine(){
 		<TagContainer>
 			<TagWrapper>
 				<Tag>Full Stack Developer</Tag>
-			</TagWrapper>
-			<Dot/>
+			</TagWrapper>			
 			<TagWrapper>
 				<Tag>Creator</Tag>
-			</TagWrapper>
-			<Dot/>
+			</TagWrapper>			
 			<TagWrapper>
 				<Tag>Enthusiast</Tag>
 			</TagWrapper>
