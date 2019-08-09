@@ -1,11 +1,12 @@
 import React from "react"
-import Navbar from './navbar'
+import styled from "styled-components"
 
-export default ({ children }) => (
-  <>
-  <div style={{width: `100%`}}>  	
-  	<Navbar/>  	
+const Layout = styled.div`
+	
+`
+
+export default ({ children }) => (  
+  <Layout>  	  	
     {children}
-  </div>
-  </>
+  </Layout>  
 )
