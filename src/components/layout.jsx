@@ -15,6 +15,12 @@ const Layout = styled.div`
 			width: calc(100% - 5rem);	
 		}
 	}
+	& > div:nth-child(odd) {
+		background: #e7fbf7;
+	}
+	& > div:nth-child(even) {
+		background: #f8fefd;
+	}
 `
 
 export default ({ children }) => (  

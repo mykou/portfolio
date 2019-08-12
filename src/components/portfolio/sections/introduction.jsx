@@ -7,8 +7,7 @@ const IntroductionContainer = styled.div`
 	min-height: 100vh;
 	display: flex;
 	flex-flow: column;
-	height: 100%;
-	background: #e7fbf7;
+	height: 100%;	
 `
 
 const Main = styled.main`
