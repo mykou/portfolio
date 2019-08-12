@@ -8,7 +8,7 @@ const IntroductionContainer = styled.div`
 	display: flex;
 	flex-flow: column;
 	height: 100%;
-
+	background: #e7fbf7;
 `
 
 const Main = styled.main`
@@ -26,6 +26,7 @@ const Picture = styled.img`
 	height: 40vw;
 	border-radius: 50%;
 	max-height: 200px;
+	margin: 1rem 0;
 `
 
 const Greeting = styled.h1`

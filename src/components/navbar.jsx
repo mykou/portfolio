@@ -6,8 +6,8 @@ import MenuIcon from 'src/components/menu'
 const NavContainer = styled.div`
 	width: 100%;
 	position: fixed;
-	top : 0;
-	background: rgba(255, 255, 255, .5);
+	top: 0;
+	background: rgba(255, 255, 255, .85);
 `
 
 const Nav = styled.nav`

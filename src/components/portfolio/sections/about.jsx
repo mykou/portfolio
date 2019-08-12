@@ -6,7 +6,8 @@ const AboutContainer = styled.div`
 	display: flex;
 	flex-flow: column;
 	align-items: center; 
-	justify-content: center; 
+	justify-content: center;
+	background: #f8fefd;
 `
 const Content = styled.div`		
 	height: 100%;
