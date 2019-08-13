@@ -1,7 +1,7 @@
 import React from "react"
-import { Link } from "gatsby"
 import styled from "styled-components"
 import MenuIcon from 'src/components/menu'
+import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 const NavContainer = styled.div`
 	width: 100%;
@@ -44,9 +44,19 @@ const LogoLink = styled(props => <Link {...props} />)`
 `
 
 const MenuLink = styled(props => <Link {...props} />)`
-	padding-left: 1rem;
+	margin-left: 1rem;
 	display: inline-block;
-	margin: 0.5rem 0;
+	padding: 0.5rem 0;
+	cursor: pointer;
+
+	&.active {
+		box-shadow: 0 4px 2px -2px #1ca086;
+		@media only screen and (max-width: 480px) {
+			box-shadow: -0.25rem 0px 0px ;
+			margin-left:0.25rem;
+			padding-left:0.75rem;
+		}
+	}
 
 	@media only screen and (max-width: 480px) {
 		padding-left: 0;
@@ -77,6 +87,10 @@ class Navbar extends React.Component {
 		this.state = { toggle: false };			
 	}
 
+	componentDidMount(){
+		scrollSpy.update();
+	}
+
 	toggleMenu = () => {
 		this.setState(state => ({
       toggle: !state.toggle
@@ -96,8 +110,14 @@ class Navbar extends React.Component {
 		      </Hamburger>     
 		      </div>
 					<LeftMenu className={this.state.toggle ? 'show' : ''}>
-						<MenuLink to="/about/">About</MenuLink>
-						<MenuLink to="/contact/">Contact</MenuLink>
+						<MenuLink activeClass="active" to="about-section" 
+											spy={true} smooth={true} duration={500}>
+							About
+						</MenuLink>
+						<MenuLink activeClass="active" to="experience-section"
+											spy={true} smooth={true} duration={500}>
+							Experience
+						</MenuLink>
 					</LeftMenu>
 					<LogoLink to="/">
 						  <LinkText>MICHAEL</LinkText>

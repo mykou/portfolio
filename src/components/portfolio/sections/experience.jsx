@@ -29,7 +29,7 @@ const UnorderedList = styled.ul`
 `
 
 export default () => (
-  	<ExpContainer>
+  	<ExpContainer id="experience-section">
   		<Content className="content">
   			<h2>Experience</h2>
   			<EventContainer>

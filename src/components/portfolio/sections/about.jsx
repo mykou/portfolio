@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from "styled-components"
+//import {scrollSpy} from 'react-scroll'
 
 const AboutContainer = styled.div`
 	min-height: 100vh;	
@@ -13,7 +14,7 @@ const Content = styled.div`
 `
 
 export default () => (
-  <AboutContainer>
+  <AboutContainer id="about-section">
   	<Content className="content">
   		<h2>About</h2>
   		<p>  			
