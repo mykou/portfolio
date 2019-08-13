@@ -7,7 +7,8 @@ const NavContainer = styled.div`
 	width: 100%;
 	position: fixed;
 	top: 0;
-	background: rgba(248, 254, 253, .85);
+	/*background: rgba(248, 254, 253, .85);*/
+	background: rgba(255, 255, 255, .85);
 `
 
 const Nav = styled.nav`
@@ -43,13 +44,13 @@ const LogoLink = styled(props => <Link {...props} />)`
 `
 
 const MenuLink = styled(props => <Link {...props} />)`
-	padding-left: 1em;
+	padding-left: 1rem;
 	display: inline-block;
-	margin: 0.5em 0;
+	margin: 0.5rem 0;
 
 	@media only screen and (max-width: 480px) {
 		padding-left: 0;
-		margin-left: 1em;
+		margin-left: 1rem;
 		margin-bottom: 0;
 	}
 `
@@ -66,7 +67,7 @@ const LinkText = styled.span`
 `
 
 const IconContainer = styled.div`	
-	margin: 1em;
+	margin: 1rem;
 `
 
 class Navbar extends React.Component {

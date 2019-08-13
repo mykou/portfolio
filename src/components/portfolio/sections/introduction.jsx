@@ -15,6 +15,7 @@ const Main = styled.main`
 	display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 2.5rem;
 `
 
 const IntroWrapper = styled.div`
@@ -41,7 +42,7 @@ const TagContainer = styled.div`
 `
 
 const TagWrapper = styled.div`
-	margin: 0.5em 0.5em 0 0.5em;
+	margin: 0.5rem 0.5rem 0 0.5rem;
 	background: #9cdfd2;
 `
 const Tag = styled.span`

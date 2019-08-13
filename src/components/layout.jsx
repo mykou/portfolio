@@ -16,7 +16,7 @@ const Layout = styled.div`
 		}
 	}
 	& > div:nth-child(odd) {
-		background: #e7fbf7;
+		/*background: #e7fbf7;*/
 	}
 	& > div:nth-child(even) {
 		background: #f8fefd;
