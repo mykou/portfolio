@@ -15,7 +15,7 @@ const Content = styled.div`
 export default () => (
   <AboutContainer>
   	<Content className="content">
-  		<h1>About</h1>
+  		<h2>About</h2>
   		<p>  			
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 				Sed dapibus lorem ac consectetur ultrices. 

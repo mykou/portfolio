@@ -31,7 +31,7 @@ const UnorderedList = styled.ul`
 export default () => (
   	<ExpContainer>
   		<Content className="content">
-  			<h1>Experience</h1>
+  			<h2>Experience</h2>
   			<EventContainer>
   				<Event logoUrl="/blank-profile.png" roleName="Software Developer"
   							 companyName="Testing Company Name" companyUrl="/"

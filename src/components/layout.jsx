@@ -21,6 +21,17 @@ const Layout = styled.div`
 	& > div:nth-child(even) {
 		background: #f8fefd;
 	}
+
+	& a {
+		text-decoration: none;		
+		background-image: none;
+		transition: all 0.7s;					
+		text-shadow: none;	
+	}
+	& a:hover {		
+		color: #198f78;
+		text-shadow: -.25px 0, 0 .25px, .25px 0, 0 -.25px;		
+	}
 `
 
 export default ({ children }) => (  

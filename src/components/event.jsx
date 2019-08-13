@@ -27,10 +27,8 @@ const CompanyLogo = styled.img`
 const CompanyName = styled.a`
 	grid-column: 2;
 	margin: auto 0;
-	font-size: 1.2rem;
+	font-size: 1.125rem;
 	text-transform: uppercase;
-	text-decoration: none;
-	text-shadow: none;
 `
 
 const RoleName = styled.span`

@@ -7,7 +7,7 @@ const NavContainer = styled.div`
 	width: 100%;
 	position: fixed;
 	top: 0;
-	background: rgba(255, 255, 255, .85);
+	background: rgba(248, 254, 253, .85);
 `
 
 const Nav = styled.nav`
@@ -39,28 +39,13 @@ const LeftMenu = styled.div`
 const LogoLink = styled(props => <Link {...props} />)`
   display: none;
   grid-column: 2;
-	text-decoration: none;
-	text-shadow: none;	
-	margin: auto;	
-	transition: all 0.7s;
-	&:hover {
-		color: #006450;
-		text-shadow: 0px 0px 0.5px		
-	}
+	margin: auto;		
 `
 
 const MenuLink = styled(props => <Link {...props} />)`
-	text-decoration: none;
-	text-shadow: none;
-	background-image: none;
 	padding-left: 1em;
 	display: inline-block;
 	margin: 0.5em 0;
-	transition: all 0.7s;
-	&:hover {
-		color: #006450;
-		text-shadow: 0px 0px 1px		
-	}
 
 	@media only screen and (max-width: 480px) {
 		padding-left: 0;
