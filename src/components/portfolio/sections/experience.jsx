@@ -28,6 +28,16 @@ const UnorderedList = styled.ul`
 	margin-top: 0.5rem;
 `
 
+function ListItem(props){
+  return (
+    <li>
+      <span>
+        {props.children}
+      </span>
+    </li>
+  )
+}
+
 export default () => (
   	<ExpContainer id="experience-section" className="section">
   		<Content className="content">
@@ -38,15 +48,11 @@ export default () => (
   							 footer="20XX - 20XX | Sydney, AU">
   					<DescriptionHeading>Responsibilities</DescriptionHeading>
   					<UnorderedList>
-  						<li>
-  							<span>Jack all</span>
-  						</li>
+  						<ListItem>Jack All</ListItem>
   					</UnorderedList>
   					<DescriptionHeading>Achievements</DescriptionHeading>
   					<UnorderedList>
-  						<li>
-  							<span>None</span>
-  						</li>
+  						<ListItem>None</ListItem>
   					</UnorderedList>
   				</Event>
   				<Event logoUrl="/blank-profile.png" roleName="Assistant"
@@ -54,15 +60,11 @@ export default () => (
   							 footer="20XX - 20XX | Sydney, AU">
   					<DescriptionHeading>Responsibilities</DescriptionHeading>
   					<UnorderedList>
-  						<li>
-  							<span>Jack all</span>
-  						</li>
+  						<ListItem>Jack All</ListItem>
   					</UnorderedList>
   					<DescriptionHeading>Achievements</DescriptionHeading>
   					<UnorderedList>
-  						<li>
-  							<span>None</span>
-  						</li>
+  						<ListItem>None</ListItem>
   					</UnorderedList>
   				</Event>		
   			</EventContainer>
