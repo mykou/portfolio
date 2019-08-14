@@ -1,9 +1,15 @@
 import React from "react"
 import styled from "styled-components"
 
+const breakpoints = {
+	xs: '480px',
+	sm: '768px'
+}
+
 const EventWrapper = styled.div`
 	background: #f8fefd;
-	box-shadow: 0px 0px 5px black;	
+	box-shadow: 0px 0px 5px black;
+	margin-bottom: 1.5rem;
 `
 
 const EventHeader = styled.div`	
@@ -15,13 +21,20 @@ const EventHeader = styled.div`
 	
 `
 const LogoLink = styled.a`	
+	grid-column: 1;
+	@media only screen and (max-width: ${breakpoints["sm"]}) {
+		grid-column-start: 1;
+		grid-column-end: 4;
+	}
 `
 
 const CompanyLogo = styled.img`
 	display: block;
-	grid-column: 1;
 	width: 64px;
 	margin: 0.75rem 1rem;
+	@media only screen and (max-width: ${breakpoints["sm"]}) {
+		margin: 0.25rem auto;
+	}
 `
 
 const CompanyName = styled.a`
@@ -29,12 +42,22 @@ const CompanyName = styled.a`
 	margin: auto 0;
 	font-size: 1.125rem;
 	text-transform: uppercase;
+	@media only screen and (max-width: ${breakpoints["sm"]}) {
+		grid-column-start: 1;
+		grid-column-end: 4;
+		text-align:center; 
+	}
 `
 
 const RoleName = styled.span`
 	grid-column: 3;
 	text-align: right;
 	margin: auto 1rem;
+	@media only screen and (max-width: ${breakpoints["sm"]}) {
+		grid-column-start: 1;
+		grid-column-end: 4;	
+		text-align:center;	 
+	}
 `
 
 const EventDescription = styled.div`

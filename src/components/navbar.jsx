@@ -3,6 +3,11 @@ import styled from "styled-components"
 import MenuIcon from 'src/components/menu'
 import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
+const breakpoints = {
+	xs: '480px',
+	sm: '768px'
+}
+
 const NavContainer = styled.div`
 	width: 100%;
 	position: fixed;
@@ -20,9 +25,8 @@ const Nav = styled.nav`
 const LeftMenu = styled.div`
 	grid-column: 1;
 	align-self: center;
-	@media only screen and (max-width: 480px) {		   
-		display: grid;		
-  	grid-row: 2;
+	@media only screen and (max-width: ${breakpoints["xs"]}) {		   
+		display: grid;		  	
   	grid-column-start: 1;
 		grid-column-end: 4;		  	  		 	 
 		max-height: 0;
@@ -51,14 +55,14 @@ const MenuLink = styled(props => <Link {...props} />)`
 
 	&.active {
 		box-shadow: 0 4px 2px -2px #1ca086;
-		@media only screen and (max-width: 480px) {
+		@media only screen and (max-width: ${breakpoints["xs"]}) {
 			box-shadow: -0.25rem 0px 0px ;
 			margin-left:0.25rem;
 			padding-left:0.75rem;
 		}
 	}
 
-	@media only screen and (max-width: 480px) {
+	@media only screen and (max-width: ${breakpoints["xs"]}) {
 		padding-left: 0;
 		margin-left: 1rem;
 		margin-bottom: 0;
@@ -68,7 +72,7 @@ const MenuLink = styled(props => <Link {...props} />)`
 
 const Hamburger = styled.div`
 	display: none;
-	@media only screen and (max-width: 480px) {
+	@media only screen and (max-width: ${breakpoints["xs"]}) {
 		display: inline;
 		align-self: center;		
 	}
