@@ -23,8 +23,7 @@ const EventHeader = styled.div`
 const LogoLink = styled.a`	
 	grid-column: 1;
 	@media only screen and (max-width: ${breakpoints["sm"]}) {
-		grid-column-start: 1;
-		grid-column-end: 4;
+		grid-column: 1 / 4;
 	}
 `
 
@@ -43,8 +42,7 @@ const CompanyName = styled.a`
 	font-size: 1.125rem;
 	text-transform: uppercase;
 	@media only screen and (max-width: ${breakpoints["sm"]}) {
-		grid-column-start: 1;
-		grid-column-end: 4;
+		grid-column: 1 / 4;
 		text-align:center; 
 	}
 `
@@ -54,8 +52,7 @@ const RoleName = styled.span`
 	text-align: right;
 	margin: auto 1rem;
 	@media only screen and (max-width: ${breakpoints["sm"]}) {
-		grid-column-start: 1;
-		grid-column-end: 4;	
+		grid-column: 1 / 4;
 		text-align:center;	 
 	}
 `

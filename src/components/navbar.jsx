@@ -27,8 +27,7 @@ const LeftMenu = styled.div`
 	align-self: center;
 	@media only screen and (max-width: ${breakpoints["xs"]}) {		   
 		display: grid;		  	
-  	grid-column-start: 1;
-		grid-column-end: 4;		  	  		 	 
+  	grid-column: 1 / 4;	  	  		 	 
 		max-height: 0;
 		overflow: hidden;
 		transition:max-height 1s cubic-bezier(0, 1, 0, 1);
