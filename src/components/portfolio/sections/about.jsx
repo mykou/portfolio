@@ -14,7 +14,7 @@ const Content = styled.div`
 `
 
 export default () => (
-  <AboutContainer id="about-section">
+  <AboutContainer id="about-section" className="section">
   	<Content className="content">
   		<h2>About</h2>
   		<p>  			

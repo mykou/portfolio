@@ -29,12 +29,28 @@ const UnorderedList = styled.ul`
 `
 
 export default () => (
-  	<ExpContainer id="experience-section">
+  	<ExpContainer id="experience-section" className="section">
   		<Content className="content">
   			<h2>Experience</h2>
   			<EventContainer>
   				<Event logoUrl="/blank-profile.png" roleName="Software Developer"
   							 companyName="Testing Company Name" companyUrl="/"
+  							 footer="20XX - 20XX | Sydney, AU">
+  					<DescriptionHeading>Responsibilities</DescriptionHeading>
+  					<UnorderedList>
+  						<li>
+  							<span>Jack all</span>
+  						</li>
+  					</UnorderedList>
+  					<DescriptionHeading>Achievements</DescriptionHeading>
+  					<UnorderedList>
+  						<li>
+  							<span>None</span>
+  						</li>
+  					</UnorderedList>
+  				</Event>
+  				<Event logoUrl="/blank-profile.png" roleName="Assistant"
+  							 companyName="Company Name" companyUrl="/"
   							 footer="20XX - 20XX | Sydney, AU">
   					<DescriptionHeading>Responsibilities</DescriptionHeading>
   					<UnorderedList>

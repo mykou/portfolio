@@ -15,6 +15,12 @@ const Layout = styled.div`
 			width: calc(100% - 5rem);	
 		}
 	}
+
+	& .section {
+		margin-top: 1.25rem;
+		padding: 1.25rem 0;
+	}
+
 	& > div:nth-child(odd) {
 		/*background: #e7fbf7;*/
 	}

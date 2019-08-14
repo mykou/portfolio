@@ -7,8 +7,8 @@ import React from "react"
 import styled from "styled-components"
 
 const IconContainer = styled.div`
-	width: 45px;
-  height: 34px;
+	width: 1.75rem;
+  height: 100%;
   position: relative;  
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
@@ -19,11 +19,12 @@ const IconContainer = styled.div`
   -o-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
   cursor: pointer;
+  padding-bottom:1rem;
 
   & span {
   	display: block;
 	  position: absolute;
-	  height: 4px;
+	  height: 3px;
 	  width: 100%;
 	  background: #1ca086;
 	  border-radius: 4px;
@@ -44,11 +45,11 @@ const IconContainer = styled.div`
   }
 
   & span:nth-child(2),& span:nth-child(3) {
-  	top: 14px;
+  	top: 9px;
 	}
 
 	& span:nth-child(4) {
-  	top: 28px;
+  	top: 18px;
 	}
 
 	&.open span:nth-child(1) {

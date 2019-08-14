@@ -62,6 +62,7 @@ const MenuLink = styled(props => <Link {...props} />)`
 		padding-left: 0;
 		margin-left: 1rem;
 		margin-bottom: 0;
+		padding: 0.3rem 0;
 	}
 `
 
@@ -77,7 +78,7 @@ const LinkText = styled.span`
 `
 
 const IconContainer = styled.div`	
-	margin: 1rem;
+	margin: 1rem;	
 `
 
 class Navbar extends React.Component {
@@ -110,7 +111,7 @@ class Navbar extends React.Component {
 		      </Hamburger>     
 		      </div>
 					<LeftMenu className={this.state.toggle ? 'show' : ''}>
-						<MenuLink activeClass="active" to="about-section" 
+						<MenuLink activeClass="active" to="about-section" offset={0}
 											spy={true} smooth={true} duration={500}>
 							About
 						</MenuLink>
