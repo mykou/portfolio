@@ -16,6 +16,10 @@ const Layout = styled.div`
 		}
 	}
 
+	& p {
+		margin-bottom: 1rem;
+	}
+
 	& .section {
 		margin-top: 1.25rem;
 		padding: 1.25rem 0;

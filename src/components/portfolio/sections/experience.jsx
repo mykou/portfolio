@@ -43,8 +43,8 @@ export default () => (
   		<Content className="content">
   			<h2>Experience</h2>
   			<EventContainer>
-  				<Event logoUrl="/blank-profile.png" roleName="Software Developer"
-  							 companyName="Testing Company Name" companyUrl="/"
+  				<Event logoUrl="/blank-profile.png" subtitle="Software Developer"
+  							 title="Testing Company Name" website="/"
   							 footer="20XX - 20XX | Sydney, AU">
   					<DescriptionHeading>Responsibilities</DescriptionHeading>
   					<UnorderedList>
@@ -55,8 +55,8 @@ export default () => (
   						<ListItem>None</ListItem>
   					</UnorderedList>
   				</Event>
-  				<Event logoUrl="/blank-profile.png" roleName="Assistant"
-  							 companyName="Company Name" companyUrl="/"
+  				<Event logoUrl="/blank-profile.png" subtitle="Assistant"
+  							 title="Company Name" website="/"
   							 footer="20XX - 20XX | Sydney, AU">
   					<DescriptionHeading>Responsibilities</DescriptionHeading>
   					<UnorderedList>

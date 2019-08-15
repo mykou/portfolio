@@ -18,14 +18,13 @@ export default () => (
   	<Content className="content">
   		<h2>About</h2>
   		<p>  			
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-				Sed dapibus lorem ac consectetur ultrices. 
-				Donec facilisis laoreet urna. 
-				Suspendisse condimentum ex sit amet elit suscipit, sed accumsan odio pharetra. 
-				Duis lacinia sagittis ipsum, non semper tortor cursus nec. 
-				Sed a quam cursus, euismod nunc a, volutpat augue. 
-				Nullam efficitur ut mi sit amet finibus. 
-				Duis pulvinar finibus condimentum.
+				I'm a recent graduate (2018) with approximately 2½ years experience in software development.
+			</p>
+			<p>
+				I enjoy designing responsive, user-friendly websites like this one I made for my portfolio.
+
+				This site was built using React without any front-end framework.
+				Styling was done using Styled Components and Typography.js for fonts.
 			</p>
 			<p>
 				Duis mattis nisi ac euismod eleifend. 

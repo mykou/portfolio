@@ -27,7 +27,7 @@ const LogoLink = styled.a`
 	}
 `
 
-const CompanyLogo = styled.img`
+const EventLogo = styled.img`
 	display: block;
 	width: 64px;
 	margin: 0.75rem 1rem;
@@ -36,7 +36,7 @@ const CompanyLogo = styled.img`
 	}
 `
 
-const CompanyName = styled.a`
+const EventTitle = styled.a`
 	grid-column: 2;
 	margin: auto 0;
 	font-size: 1.125rem;
@@ -47,7 +47,7 @@ const CompanyName = styled.a`
 	}
 `
 
-const RoleName = styled.span`
+const Subtitle = styled.span`
 	grid-column: 3;
 	text-align: right;
 	margin: auto 1rem;
@@ -75,11 +75,11 @@ const FooterText = styled.span`
 export default (props) => (  
   <EventWrapper>
 		<EventHeader>
-			<LogoLink href={props.companyUrl}>
-				<CompanyLogo src={props.logoUrl} alt="" />
+			<LogoLink href={props.website}>
+				<EventLogo src={props.logoUrl} alt="" />
 			</LogoLink>
-			<CompanyName target="_blank" href={props.companyUrl}>{props.companyName}</CompanyName>
-			<RoleName>{props.roleName}</RoleName>
+			<EventTitle target="_blank" href={props.website}>{props.title}</EventTitle>
+			<Subtitle>{props.subtitle}</Subtitle>
 		</EventHeader>
 		<EventDescription>
 			{props.children}
