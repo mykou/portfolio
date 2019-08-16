@@ -7,9 +7,12 @@ const breakpoints = {
 }
 
 const EventWrapper = styled.div`
-	background: #f8fefd;
 	box-shadow: 0px 0px 5px black;
 	margin-bottom: 1.5rem;
+	background: white;
+	&.dark {
+		background: #f8fefd;
+	}
 `
 
 const EventHeader = styled.div`	
@@ -73,7 +76,7 @@ const FooterText = styled.span`
 `
 
 export default (props) => (  
-  <EventWrapper>
+  <EventWrapper className={props.colorScheme}>
 		<EventHeader>
 			<LogoLink href={props.website}>
 				<EventLogo src={props.logoUrl} alt="" />

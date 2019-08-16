@@ -2,7 +2,7 @@ import React from 'react'
 import styled from "styled-components"
 import Event from 'src/components/event'
 
-const ExpContainer = styled.div`
+const EduContainer = styled.div`
 	min-height: 100vh;	
 	display: flex;
 	flex-flow: column;
@@ -39,13 +39,13 @@ function ListItem(props){
 }
 
 export default () => (
-  	<ExpContainer id="experience-section" className="section">
+  	<EduContainer id="education-section" className="section">
   		<Content className="content">
-  			<h2>Experience</h2>
+  			<h2>Education</h2>
   			<EventContainer>
   				<Event logoUrl="/blank-profile.png" subtitle="Software Developer"
-  							 title="Testing Company Name" website="/"
-  							 footer="20XX - 20XX | Sydney, AU" colorScheme="dark">
+  							 title="University of New South Wales" website="https://www.unsw.edu.au/"
+  							 footer="20XX - 20XX | Sydney, AU">
   					<DescriptionHeading>Responsibilities</DescriptionHeading>
   					<UnorderedList>
   						<ListItem>Jack All</ListItem>
@@ -56,8 +56,8 @@ export default () => (
   					</UnorderedList>
   				</Event>
   				<Event logoUrl="/blank-profile.png" subtitle="Assistant"
-  							 title="Company Name" website="/"
-  							 footer="20XX - 20XX | Sydney, AU" colorScheme="dark">
+  							 title="Trinity Grammar School" website="https://www.trinity.nsw.edu.au/"
+  							 footer="20XX - 20XX | Sydney, AU">
   					<DescriptionHeading>Responsibilities</DescriptionHeading>
   					<UnorderedList>
   						<ListItem>Jack All</ListItem>
@@ -69,5 +69,5 @@ export default () => (
   				</Event>		
   			</EventContainer>
   		</Content>
-  	</ExpContainer>
+  	</EduContainer>
 )

@@ -13,7 +13,7 @@ const NavContainer = styled.div`
 	position: fixed;
 	top: 0;
 	/*background: rgba(248, 254, 253, .85);*/
-	background: rgba(255, 255, 255, .85);
+	background: rgba(255, 255, 255, .95);
 `
 
 const Nav = styled.nav`
@@ -121,6 +121,10 @@ class Navbar extends React.Component {
 						<MenuLink activeClass="active" to="experience-section"
 											spy={true} smooth={true} duration={500}>
 							Experience
+						</MenuLink>
+						<MenuLink activeClass="active" to="education-section"
+											spy={true} smooth={true} duration={500}>
+							Education
 						</MenuLink>
 					</LeftMenu>
 					<LogoLink to="/">
