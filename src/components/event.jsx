@@ -47,6 +47,7 @@ const EventTitle = styled.a`
 	@media only screen and (max-width: ${breakpoints["sm"]}) {
 		grid-column: 1 / 4;
 		text-align:center; 
+		margin: 0 0.5rem;
 	}
 `
 
@@ -56,7 +57,8 @@ const Subtitle = styled.span`
 	margin: auto 1rem;
 	@media only screen and (max-width: ${breakpoints["sm"]}) {
 		grid-column: 1 / 4;
-		text-align:center;	 
+		text-align:center;
+		margin: 0 0.5rem;
 	}
 `
 

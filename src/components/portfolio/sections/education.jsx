@@ -43,10 +43,15 @@ export default () => (
   		<Content className="content">
   			<h2>Education</h2>
   			<EventContainer>
-  				<Event logoUrl="/blank-profile.png" subtitle="Software Developer"
+  				<Event logoUrl="/blank-profile.png" subtitle="Undergraduate Education"
   							 title="University of New South Wales" website="https://www.unsw.edu.au/"
   							 footer="20XX - 20XX | Sydney, AU">
-  					<DescriptionHeading>Responsibilities</DescriptionHeading>
+  					<p>
+              Learnt about the processes, method and tools for the design and development of high quality, reliable software systems.
+              It involved the study and application of software specification, design, implementation, testing and documentation.
+              The degree also included a series of workshops that helped us work inteams and gain hands-on experience.     
+            </p>
+            <DescriptionHeading>Awards & Achievements</DescriptionHeading>
   					<UnorderedList>
   						<ListItem>Jack All</ListItem>
   					</UnorderedList>
@@ -55,7 +60,7 @@ export default () => (
   						<ListItem>None</ListItem>
   					</UnorderedList>
   				</Event>
-  				<Event logoUrl="/blank-profile.png" subtitle="Assistant"
+  				<Event logoUrl="/blank-profile.png" subtitle="High School"
   							 title="Trinity Grammar School" website="https://www.trinity.nsw.edu.au/"
   							 footer="20XX - 20XX | Sydney, AU">
   					<DescriptionHeading>Responsibilities</DescriptionHeading>
