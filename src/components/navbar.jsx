@@ -18,8 +18,6 @@ const NavContainer = styled.div`
 
 const Nav = styled.nav`
   margin: 0 auto;  
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;   
 `
 
 const LeftMenu = styled.div`

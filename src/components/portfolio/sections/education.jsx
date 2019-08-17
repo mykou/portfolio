@@ -43,7 +43,7 @@ export default () => (
   		<Content className="content">
   			<h2>Education</h2>
   			<EventContainer>
-  				<Event logoUrl="/blank-profile.png" subtitle="Undergraduate Education"
+  				<Event logoUrl="/unsw.png" subtitle="Undergraduate Education"
   							 title="University of New South Wales" website="https://www.unsw.edu.au/"
   							 footer="20XX - 20XX | Sydney, AU">
   					<p>
@@ -60,7 +60,7 @@ export default () => (
   						<ListItem>None</ListItem>
   					</UnorderedList>
   				</Event>
-  				<Event logoUrl="/blank-profile.png" subtitle="High School"
+  				<Event logoUrl="/trinity.png" subtitle="High School"
   							 title="Trinity Grammar School" website="https://www.trinity.nsw.edu.au/"
   							 footer="20XX - 20XX | Sydney, AU">
   					<DescriptionHeading>Responsibilities</DescriptionHeading>

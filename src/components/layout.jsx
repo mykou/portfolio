@@ -21,8 +21,7 @@ const Layout = styled.div`
 	}
 
 	& .section {
-		margin-top: 1.25rem;
-		padding: 1.25rem 0;
+		padding: 3rem 0;
 	}
 
 	& > div:nth-child(odd) {

@@ -32,7 +32,7 @@ const LogoLink = styled.a`
 
 const EventLogo = styled.img`
 	display: block;
-	width: 64px;
+	width: 3rem;
 	margin: 0.75rem 1rem;
 	@media only screen and (max-width: ${breakpoints["sm"]}) {
 		margin: 0.25rem auto;

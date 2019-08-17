@@ -43,10 +43,10 @@ export default () => (
   		<Content className="content">
   			<h2>Experience</h2>
   			<EventContainer>
-  				<Event logoUrl="/blank-profile.png" subtitle="Software Developer"
-  							 title="Testing Company Name" website="/"
-  							 footer="20XX - 20XX | Sydney, AU" colorScheme="dark">
-  					<DescriptionHeading>Responsibilities</DescriptionHeading>
+  				<Event logoUrl="/iss.png" subtitle="Application Programmer"
+  							 title="Integrated Software Solutions" website="https://intsoftsol.com"
+  							 footer="Apr 2017 - Current | Sydney, AU" colorScheme="dark">
+  					<DescriptionHeading>Role & Responsibilities</DescriptionHeading>
   					<UnorderedList>
   						<ListItem>Jack All</ListItem>
   					</UnorderedList>
@@ -55,10 +55,10 @@ export default () => (
   						<ListItem>None</ListItem>
   					</UnorderedList>
   				</Event>
-  				<Event logoUrl="/blank-profile.png" subtitle="Assistant"
-  							 title="Company Name" website="/"
-  							 footer="20XX - 20XX | Sydney, AU" colorScheme="dark">
-  					<DescriptionHeading>Responsibilities</DescriptionHeading>
+  				<Event logoUrl="/cwh.png" subtitle="Pharmacy Assistant"
+  							 title="Chemist Warehouse" website="https://www.chemistwarehouse.com.au/"
+  							 footer="Jun 2011 - Apr 2017 | Sydney, AU" colorScheme="dark">
+  					<DescriptionHeading>Role & Responsibilities</DescriptionHeading>
   					<UnorderedList>
   						<ListItem>Jack All</ListItem>
   					</UnorderedList>

@@ -30,6 +30,7 @@ const Picture = styled.img`
 `
 
 const Greeting = styled.h1`
+	font-weight: 500;
 	margin: 0;
 `
 
