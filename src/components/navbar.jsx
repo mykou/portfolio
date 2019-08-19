@@ -105,10 +105,24 @@ class Navbar extends React.Component {
 		this.state = { toggle: false };					
 		// refs
 		this.menu = React.createRef();
+		this.navbar = React.createRef();		
 	}
 
 	componentDidMount(){
 		scrollSpy.update();
+		document.addEventListener('mousedown', this.handleClickOutside);
+	}
+
+  componentWillUnmount() {
+    document.removeEventListener('mousedown', this.handleClickOutside);
+  }
+
+	handleClickOutside = (e) => {		
+		if (this.navbar && !this.navbar.current.contains(e.target)){
+			this.setState(state => ({
+				toggle: false
+			}))
+		}
 	}
 
 	toggleMenu = (open) => {				
@@ -121,7 +135,7 @@ class Navbar extends React.Component {
 
 	render() {
 		return (
-			<NavContainer>
+			<NavContainer ref={this.navbar}>
 				<Nav>							
 					<div>
 		      <Hamburger>
