@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import MenuIcon from 'src/components/menu'
 import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import {FaArrowAltCircleDown} from 'react-icons/fa';
 
 const breakpoints = {
 	xs: '480px',
@@ -9,6 +10,7 @@ const breakpoints = {
 }
 
 const NavContainer = styled.div`
+	z-index:999;
 	width: 100%;
 	position: fixed;
 	top: 0;
@@ -67,6 +69,20 @@ const MenuLink = styled(props => <Link {...props} />)`
 	}
 `
 
+const DownloadLink = styled.a`
+	margin: 0 1rem;
+	display: inline-block;
+	padding: 0.5rem 0;
+	float: right;
+
+	@media only screen and (max-width: ${breakpoints["xs"]}) {
+		padding-left: 0;
+		margin-left: 1rem;
+		margin-bottom: 0;
+		padding: 0.3rem 0;
+	}
+`
+
 const Hamburger = styled.div`
 	display: none;
 	@media only screen and (max-width: ${breakpoints["xs"]}) {
@@ -86,17 +102,21 @@ class Navbar extends React.Component {
 	
 	constructor(props){
 		super(props);
-		this.state = { toggle: false };			
+		this.state = { toggle: false };					
+		// refs
+		this.menu = React.createRef();
 	}
 
 	componentDidMount(){
 		scrollSpy.update();
 	}
 
-	toggleMenu = () => {
-		this.setState(state => ({
-      toggle: !state.toggle
-    }));    
+	toggleMenu = (open) => {				
+		if (this.menu.current.props.className === 'open' || open === true){
+			this.setState(state => ({
+      	toggle: !state.toggle
+    	}));    	
+		}		
 	}
 
 	render() {
@@ -106,24 +126,27 @@ class Navbar extends React.Component {
 					<div>
 		      <Hamburger>
 		      	<IconContainer>
-		      		<MenuIcon className={this.state.toggle ? 'open' : ''}
-		        					onClick={this.toggleMenu}/>
+		      		<MenuIcon className={this.state.toggle ? 'open' : ''} ref={this.menu}
+		        					onClick={(e) => this.toggleMenu(true,e)}/>
 		      	</IconContainer>     			        
 		      </Hamburger>     
-		      </div>
-					<LeftMenu className={this.state.toggle ? 'show' : ''}>
-						<MenuLink activeClass="active" to="about-section" offset={0}
+		      </div>	      
+					<LeftMenu className={this.state.toggle ? 'show' : ''}>						
+						<MenuLink activeClass="active" to="about-section" onClick={this.toggleMenu}
 											spy={true} smooth={true} duration={500}>
 							About
 						</MenuLink>
-						<MenuLink activeClass="active" to="experience-section"
+						<MenuLink activeClass="active" to="experience-section" onClick={this.toggleMenu}
 											spy={true} smooth={true} duration={500}>
 							Experience
 						</MenuLink>
-						<MenuLink activeClass="active" to="education-section"
+						<MenuLink activeClass="active" to="education-section" onClick={this.toggleMenu}
 											spy={true} smooth={true} duration={500}>
 							Education
 						</MenuLink>
+						<DownloadLink target="_blank" href="/" >
+							Resume&nbsp;<FaArrowAltCircleDown style={{verticalAlign: 'sub'}}/>						
+						</DownloadLink>
 					</LeftMenu>
 					<LogoLink to="/">
 						  <LinkText>MICHAEL</LinkText>
