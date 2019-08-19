@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from "styled-components"
-//import {scrollSpy} from 'react-scroll'
+import Footer from 'src/components/footer'
 
 const AboutContainer = styled.div`
 	min-height: 100vh;	
@@ -36,6 +36,7 @@ export default () => (
 				Vestibulum dignissim sagittis erat at gravida. 
 				Etiam posuere congue vehicula.
 			</p>  		
-  	</Content>	
+  	</Content>
+  	<Footer to="experience-section"/>
   </AboutContainer>
 )

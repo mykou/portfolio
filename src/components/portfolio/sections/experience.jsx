@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from "styled-components"
 import Event from 'src/components/event'
+import Footer from 'src/components/footer'
 
 const ExpContainer = styled.div`
 	min-height: 100vh;	
@@ -69,5 +70,6 @@ export default () => (
   				</Event>		
   			</EventContainer>
   		</Content>
+      <Footer to="education-section"/>
   	</ExpContainer>
 )

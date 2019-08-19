@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import Navbar from 'src/components/navbar'
 import SocialIcons from 'src/components/socialIcons'
+import Footer from 'src/components/footer'
 
 const IntroductionContainer = styled.div`
 	min-height: 100vh;
@@ -78,7 +79,8 @@ class Introduction extends React.Component {
 						<TagLine/>
 						<SocialIcons/>
 					</IntroWrapper>
-				</Main>
+				</Main>				
+				<Footer to="about-section"/>
 			</IntroductionContainer>			
 		)
 	}
