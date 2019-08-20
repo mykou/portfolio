@@ -1,7 +1,8 @@
 import React from "react"
 import styled from "styled-components"
 import MenuIcon from 'src/components/menu'
-import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import { Link,scrollSpy } from 'react-scroll'
+//import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 import {FaArrowAltCircleDown} from 'react-icons/fa';
 
 const breakpoints = {
@@ -71,7 +72,8 @@ const MenuLink = styled(props => <Link {...props} />)`
 
 const DownloadLink = styled.a`
 	margin: 0 1rem;
-	display: inline-block;
+	display: flex;
+	align-items: center;
 	padding: 0.5rem 0;
 	float: right;
 
@@ -102,7 +104,10 @@ class Navbar extends React.Component {
 	
 	constructor(props){
 		super(props);
-		this.state = { toggle: false };					
+		this.state = { 
+			toggle: false,
+			jumpOffset: 0
+		};					
 		// refs
 		this.menu = React.createRef();
 		this.navbar = React.createRef();		
@@ -110,14 +115,25 @@ class Navbar extends React.Component {
 
 	componentDidMount(){
 		scrollSpy.update();
-		document.addEventListener('mousedown', this.handleClickOutside);
+		document.addEventListener('mousedown', this.handleClickOutside);		
+		window.addEventListener('resize', this.handleResize);		
+		this.setState(state => ({
+			jumpOffset: this.navbar.current.parentNode.offsetHeight
+		}))
 	}
 
   componentWillUnmount() {
     document.removeEventListener('mousedown', this.handleClickOutside);
+    window.removeEventListener('resize', this.handleResize);
   }
 
-	handleClickOutside = (e) => {		
+  handleResize = (e) => {  	
+  	this.setState(state => ({
+			jumpOffset: this.navbar.current.parentNode.offsetHeight
+		}))
+  }
+
+	handleClickOutside = (e) => {				
 		if (this.navbar && !this.navbar.current.contains(e.target)){
 			this.setState(state => ({
 				toggle: false
@@ -159,7 +175,7 @@ class Navbar extends React.Component {
 							Education
 						</MenuLink>
 						<DownloadLink target="_blank" href="/" >
-							Resume&nbsp;<FaArrowAltCircleDown style={{verticalAlign: 'sub'}}/>						
+							Resume&nbsp;<FaArrowAltCircleDown/>						
 						</DownloadLink>
 					</LeftMenu>
 					<LogoLink to="/">
