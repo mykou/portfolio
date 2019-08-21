@@ -13,30 +13,32 @@ const Content = styled.div`
 	height: 100%;
 `
 
+function Emoji(props){
+	return <span role="img" aria-label={props.label}>{props.content}</span>
+}
+
 export default () => (
   <AboutContainer id="about-section" className="section">
   	<Content className="content">
   		<h2>About</h2>
   		<p>  			
-				I'm a recent graduate (2018) with approximately 2½ years experience in software development.
+				I'm a full-stack developer with approximately 2½ years experience in software development.
 			</p>
 			<p>
 				I enjoy designing responsive, user-friendly websites like this one I made for my portfolio.
 
 				This site was built using React without any front-end framework.
-				Styling was done using Styled Components and Typography.js for fonts.
+				Styling was done using Styled&nbsp;Components and Typography.js for fonts.
 			</p>
 			<p>
-				Duis mattis nisi ac euismod eleifend. 
-				Donec viverra erat quis odio pulvinar, vitae convallis arcu dictum. 
-				Vivamus sit amet lectus sed sem facilisis elementum nec ut justo. 
-				Cras ornare dolor vel nulla consequat, hendrerit mollis arcu condimentum. 
-				Duis sollicitudin tellus maximus erat lobortis pellentesque. 
-				Fusce ac urna ac neque pharetra aliquet. 
-				Vestibulum dignissim sagittis erat at gravida. 
-				Etiam posuere congue vehicula.
+				When I'm not working you'll find playing sports or working out.
+				I enjoy 
+				basketball&nbsp;<Emoji label="basketball" content="🏀"></Emoji>,
+				volleyball&nbsp;<Emoji label="volleyball" content="🏐"></Emoji>,
+				tennis&nbsp;<Emoji label="volleyabll" content="🎾"></Emoji>, 
+				and lifting&nbsp;<Emoji label="weightlifting" content="🏋"></Emoji>.
 			</p>  		
   	</Content>
-  	<Footer to="experience-section"/>
+  	<Footer to="skills-section"/>
   </AboutContainer>
 )

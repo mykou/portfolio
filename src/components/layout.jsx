@@ -20,8 +20,10 @@ const Layout = styled.div`
 		margin-bottom: 1rem;
 	}
 
-	& .section {
+	& .section:not(:last-child) {
 		padding-top: 3rem;
+		padding-bottom: 2rem;
+		position: relative;
 	}
 
 	& > div:nth-child(odd) {

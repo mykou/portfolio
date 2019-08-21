@@ -5,6 +5,9 @@ theme.overrideThemeStyles = ({ rhythm }, options) => ({
   'h1,h2,h3,h4,h5,h6': {
     color: `#1ca086`   
   },
+  'h2,h3,h4,h5,h6': {
+    marginBottom: `1rem`
+  },
   'a': {
     color: `#1ca086`,
   	backgroundImage: `none`

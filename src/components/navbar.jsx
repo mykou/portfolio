@@ -7,7 +7,7 @@ import { FaArrowAltCircleDown,FaAngleDoubleUp } from 'react-icons/fa';
 import { fadeInUp,fadeOutDown } from 'react-animations';
 
 const breakpoints = {
-	xs: '480px',
+	xs: '600px',
 	sm: '768px'
 }
 
@@ -215,6 +215,10 @@ class Navbar extends React.Component {
 						<MenuLink activeClass="active" to="about-section" onClick={this.toggleMenu}
 											spy={true} smooth={true} duration={500}>
 							About
+						</MenuLink>
+						<MenuLink activeClass="active" to="skills-section" onClick={this.toggleMenu}
+											spy={true} smooth={true} duration={500}>
+							Skills
 						</MenuLink>
 						<MenuLink activeClass="active" to="experience-section" onClick={this.toggleMenu}
 											spy={true} smooth={true} duration={500}>

@@ -11,7 +11,8 @@ bounce['70%'].transform = "translate3d(0, -0.65rem, 0)"
 const FooterWrapper = styled(props => <Link {...props} />)`
 	width: 100%;
 	text-align:center;
-	margin-top: auto;
+	position: absolute;
+	bottom: 0;
 	cursor: pointer;
 	font-size: 1.5rem;
 `
