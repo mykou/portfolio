@@ -1,9 +1,10 @@
 import React from "react"
-import styled from "styled-components"
+import styled, {keyframes} from "styled-components"
 import MenuIcon from 'src/components/menu'
 import { Link,scrollSpy } from 'react-scroll'
 //import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
-import {FaArrowAltCircleDown} from 'react-icons/fa';
+import { FaArrowAltCircleDown,FaAngleDoubleUp } from 'react-icons/fa';
+import { fadeInUp,fadeOutDown } from 'react-animations';
 
 const breakpoints = {
 	xs: '480px',
@@ -100,13 +101,39 @@ const IconContainer = styled.div`
 	margin: 1rem;	
 `
 
+const TopButtonContainer = styled(props => <Link {...props} />)`
+	position:absolute;
+	left: 1rem;
+	top: calc(100vh - 5rem);	
+	display:flex;
+	opacity: 0;	
+	flex-direction: column;
+	align-items: center;		
+	cursor: pointer;
+	&.viewed {
+		animation: 2s ${keyframes`${fadeOutDown}`};
+	}
+	
+	
+	@media only screen and (max-width: ${breakpoints["xs"]}) {
+		left:0.4rem;
+	}
+
+	&.show {				
+		opacity: 1;		
+		animation: 2s ${keyframes`${fadeInUp}`};
+	}
+`
+
 class Navbar extends React.Component {
 	
 	constructor(props){
 		super(props);
 		this.state = { 
 			toggle: false,
-			jumpOffset: 0
+			jumpOffset: 0,
+			visible: false,
+			viewedIntro: false
 		};					
 		// refs
 		this.menu = React.createRef();
@@ -117,6 +144,7 @@ class Navbar extends React.Component {
 		scrollSpy.update();
 		document.addEventListener('mousedown', this.handleClickOutside);		
 		window.addEventListener('resize', this.handleResize);		
+		window.addEventListener('scroll', this.handleScroll);
 		this.setState(state => ({
 			jumpOffset: this.navbar.current.parentNode.offsetHeight
 		}))
@@ -125,14 +153,10 @@ class Navbar extends React.Component {
   componentWillUnmount() {
     document.removeEventListener('mousedown', this.handleClickOutside);
     window.removeEventListener('resize', this.handleResize);
+    window.removeEventListener('scroll', this.handleScroll);
   }
 
-  handleResize = (e) => {  	
-  	this.setState(state => ({
-			jumpOffset: this.navbar.current.parentNode.offsetHeight
-		}))
-  }
-
+  
 	handleClickOutside = (e) => {				
 		if (this.navbar && !this.navbar.current.contains(e.target)){
 			this.setState(state => ({
@@ -140,6 +164,27 @@ class Navbar extends React.Component {
 			}))
 		}
 	}
+
+	handleResize = (e) => {  	
+  	this.setState(state => ({
+			jumpOffset: this.navbar.current.parentNode.offsetHeight
+		}))
+  }
+
+  handleScroll = (e) => {
+  	const offset = this.state.jumpOffset;
+  	const currentPos = window.scrollY;
+  	const visible = (currentPos >= offset);
+		this.setState(state => ({
+			visible: visible
+		}))
+  	if (visible === true){
+  		this.setState(state => ({
+  			viewedIntro: true
+  		}))
+  	}
+  	
+  }
 
 	toggleMenu = (open) => {				
 		if (this.menu.current.props.className === 'open' || open === true){
@@ -150,6 +195,11 @@ class Navbar extends React.Component {
 	}
 
 	render() {
+		let topBtnClass = '';
+		if (this.state.visible) topBtnClass += ' show';
+		if (this.state.viewedIntro) topBtnClass += ' viewed';
+		console.log(topBtnClass);
+
 		return (
 			<NavContainer ref={this.navbar}>
 				<Nav>							
@@ -182,6 +232,11 @@ class Navbar extends React.Component {
 						  <LinkText>MICHAEL</LinkText>
 					</LogoLink>
 				</Nav>
+				<TopButtonContainer className={topBtnClass}
+														to="intro-section" smooth={true}>
+					<FaAngleDoubleUp style={{fontSize: `2rem`}}/>
+					<span><strong>Top</strong></span>
+				</TopButtonContainer>
 			</NavContainer>
 		)
 	}

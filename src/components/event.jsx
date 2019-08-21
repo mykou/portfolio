@@ -81,7 +81,7 @@ export default (props) => (
   <EventWrapper className={props.colorScheme}>
 		<EventHeader>
 			<LogoLink href={props.website}>
-				<EventLogo src={props.logoUrl} alt="" />
+				<EventLogo src={props.logoUrl} alt="Event logo" />
 			</LogoLink>
 			<EventTitle target="_blank" href={props.website}>{props.title}</EventTitle>
 			<Subtitle>{props.subtitle}</Subtitle>

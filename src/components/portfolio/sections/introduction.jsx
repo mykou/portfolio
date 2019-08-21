@@ -70,11 +70,11 @@ function TagLine(){
 class Introduction extends React.Component {
 	render() {
 		return (
-			<IntroductionContainer>
+			<IntroductionContainer id="intro-section">
 				<Navbar/>
 				<Main>
 					<IntroWrapper>
-						<Picture src='/blank-profile.png' alt=''/>
+						<Picture src='/blank-profile.png' alt='Picture of me'/>
 						<Greeting>Hello, I'm Michael!</Greeting>
 						<TagLine/>
 						<SocialIcons/>
