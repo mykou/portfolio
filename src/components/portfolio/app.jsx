@@ -1,4 +1,6 @@
 import React from "react"
+import { Helmet } from "react-helmet"
+
 import Introduction from './sections/introduction'
 import About from './sections/about'
 import Skills from './sections/skills'
@@ -9,6 +11,10 @@ class App extends React.Component {
 	render() {
 		return (
 			<>
+				<Helmet>
+          <meta charSet="utf-8" />
+          <title>Michael Liu</title>          
+        </Helmet>
 				<Introduction/>	
 				<About/>
 				<Skills/>

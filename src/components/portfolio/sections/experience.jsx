@@ -27,6 +27,7 @@ const DescriptionHeading = styled.span`
 
 const UnorderedList = styled.ul`
 	margin-top: 0.5rem;
+  list-style: circle;
 `
 
 function ListItem(props){

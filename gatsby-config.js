@@ -19,6 +19,17 @@ module.exports = {
       options: {
         src: path.join(__dirname, 'src'),        
       }
-    }
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Michael Liu`,
+        short_name: `Michael Liu`,
+        start_url: `/`,        
+        icon: `src/images/logo.png`,
+        display: `standalone`        
+      },
+    },
+    `gatsby-plugin-react-helmet`
   ],
 }

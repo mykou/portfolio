@@ -32,33 +32,34 @@ const TagList = styled.ul`
 	}
 `
 
-
 export default () => (
   <SkillsContainer id="skills-section" className="section">
   	<Content className="content">
   		<h2>Skills</h2>
   		<h3>Programming Languages</h3>
   		<TagList>
-  			<li>Test</li>
-  			<li>Test</li>
-  			<li>Test</li>
-  			<li>Test</li>
-  			<li>Test</li>
-  			<li>Test</li>
-  			<li>Test</li>
-  			<li>Test</li>
-  			<li>Test</li>
-  			<li>Test</li>
-  			<li>Test</li>
-  			<li>Test</li>
-  			<li>Test</li>
-  			<li>Test</li>
-  			<li>Test</li>
-  			<li>Test</li>
-  			<li>Test</li>
-  			<li>Test</li>
-  			<li>Test</li>
-  		</TagList>		
+        <li>Caché ObjectScript</li>
+  			<li>C</li>
+  			<li>C++</li>
+        <li>Java</li>
+        <li>SQL</li>
+  			<li>Javascript</li>
+        <li>HTML</li>
+  			<li>CSS</li>
+        <li>JSON</li>
+        <li>XML</li>
+  			<li>Python</li>
+  		</TagList>
+      <h3>Technologies</h3>
+      <TagList>
+        <li>Intersystems Ensemble</li>
+        <li>React</li>
+        <li>GatsbyJS</li>
+        <li>Bootstrap</li>
+        <li>Django</li>
+        <li>Microsoft Windows</li>
+        <li>Microsoft Office</li>
+      </TagList>     
   	</Content>
   	<Footer to="experience-section"/>
   </SkillsContainer>

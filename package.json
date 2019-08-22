@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "Michael Liu Portfolio",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "Online portfolio",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
@@ -15,12 +15,15 @@
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.6",
     "gatsby": "^2.13.9",
+    "gatsby-plugin-manifest": "^2.2.8",
+    "gatsby-plugin-react-helmet": "^3.1.4",
     "gatsby-plugin-styled-components": "^3.1.2",
     "gatsby-plugin-typography": "^2.3.0",
     "react": "^16.8.6",
     "react-animations": "^1.0.0",
     "react-bootstrap": "^1.0.0-beta.9",
     "react-dom": "^16.8.6",
+    "react-helmet": "^5.2.1",
     "react-icons": "^3.7.0",
     "react-scroll": "^1.7.12",
     "react-typography": "^0.16.19",
