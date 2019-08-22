@@ -197,8 +197,7 @@ class Navbar extends React.Component {
 	render() {
 		let topBtnClass = '';
 		if (this.state.visible) topBtnClass += ' show';
-		if (this.state.viewedIntro) topBtnClass += ' viewed';
-		console.log(topBtnClass);
+		if (this.state.viewedIntro) topBtnClass += ' viewed';		
 
 		return (
 			<NavContainer ref={this.navbar}>
