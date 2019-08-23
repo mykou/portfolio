@@ -181,7 +181,7 @@ class Navbar extends React.Component {
   handleScroll = (e) => {  	
   	const offset = this.state.jumpOffset;
   	const currentPos = window.scrollY;
-  	const visible = (currentPos >= offset);
+  	const visible = (currentPos >= (offset-5));
   	if (visible === this.state.visible) return;  	
 		this.setState(state => ({
 			visible: visible
