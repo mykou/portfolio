@@ -25,8 +25,11 @@ const DescriptionHeading = styled.span`
 `
 
 const UnorderedList = styled.ul`
-	margin-top: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  list-style: circle;
 `
+
 const Item = styled.li`
   margin-bottom: calc(0.5rem / 2);
 `
@@ -51,7 +54,7 @@ export default () => (
   							 footer="2014 - 2018 | Sydney, AU">
   					<h4>Bachelor of Engineering (Software&nbsp;Engineering)</h4>
             <p>
-              Learnt about the processes, method and tools for the design and development of high quality, reliable software systems.
+              Learnt about the processes, methods and tools for the design and development of high quality, reliable software systems.
               It involved the study and application of software specification, design, implementation, testing and documentation.
               The degree also included a series of workshops that helped us work inteams and gain hands-on experience.     
             </p>

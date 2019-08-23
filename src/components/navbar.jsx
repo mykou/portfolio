@@ -102,11 +102,11 @@ const IconContainer = styled.div`
 `
 
 const TopButtonContainer = styled(props => <Link {...props} />)`
-	position:absolute;
-	left: 1rem;
+	position:absolute;	
 	top: calc(100vh - 5rem);	
 	display:flex;
 	opacity: 0;	
+	width:10rem;
 	flex-direction: column;
 	align-items: center;		
 	cursor: pointer;
@@ -114,14 +114,21 @@ const TopButtonContainer = styled(props => <Link {...props} />)`
 		animation: 2s ${keyframes`${fadeOutDown}`};
 	}
 	
-	
-	@media only screen and (max-width: ${breakpoints["xs"]}) {
-		left:0.4rem;
-	}
-
 	&.show {				
 		opacity: 1;		
 		animation: 2s ${keyframes`${fadeInUp}`};
+	}
+
+	@media only screen and (max-width: 1024px) {
+		width:6.25rem;
+	}
+
+	@media only screen and (max-width: 768px) {
+		width:3.75rem;
+	}
+
+	@media only screen and (max-width: 480px) {
+		width:2.5rem;
 	}
 `
 
