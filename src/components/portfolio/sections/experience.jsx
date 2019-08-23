@@ -50,11 +50,11 @@ export default () => (
   							 footer="Apr 2017 - Current | Sydney, AU" colorScheme="dark">
   					<DescriptionHeading>Role & Responsibilities</DescriptionHeading>
   					<UnorderedList>
-  						<ListItem>Jack All</ListItem>
+  						<ListItem>PLACHOLDER TEXT</ListItem>
   					</UnorderedList>
   					<DescriptionHeading>Achievements</DescriptionHeading>
   					<UnorderedList>
-  						<ListItem>None</ListItem>
+  						<ListItem>PLACHOLDER TEXT</ListItem>
   					</UnorderedList>
   				</Event>
   				<Event logoUrl="/cwh.png" subtitle="Pharmacy Assistant"
@@ -62,11 +62,11 @@ export default () => (
   							 footer="Jun 2011 - Apr 2017 | Sydney, AU" colorScheme="dark">
   					<DescriptionHeading>Role & Responsibilities</DescriptionHeading>
   					<UnorderedList>
-  						<ListItem>Jack All</ListItem>
+  						<ListItem>PLACHOLDER TEXT</ListItem>
   					</UnorderedList>
   					<DescriptionHeading>Achievements</DescriptionHeading>
   					<UnorderedList>
-  						<ListItem>None</ListItem>
+  						<ListItem>PLACHOLDER TEXT</ListItem>
   					</UnorderedList>
   				</Event>		
   			</EventContainer>

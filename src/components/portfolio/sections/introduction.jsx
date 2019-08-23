@@ -9,6 +9,7 @@ const IntroductionContainer = styled.div`
 	display: flex;
 	flex-flow: column;
 	height: 100%;	
+	position: relative;
 `
 
 const Main = styled.main`
@@ -21,6 +22,7 @@ const Main = styled.main`
 
 const IntroWrapper = styled.div`
 	text-align: center;
+	margin-bottom: 2rem;
 `
 
 const Picture = styled.img`

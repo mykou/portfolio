@@ -53,11 +53,11 @@ export default () => (
             </p>
             <DescriptionHeading>Awards & Achievements</DescriptionHeading>
   					<UnorderedList>
-  						<ListItem>Jack All</ListItem>
+  						<ListItem>PLACHOLDER TEXT</ListItem>
   					</UnorderedList>
   					<DescriptionHeading>Achievements</DescriptionHeading>
   					<UnorderedList>
-  						<ListItem>None</ListItem>
+  						<ListItem>PLACHOLDER TEXT</ListItem>
   					</UnorderedList>
   				</Event>
   				<Event logoUrl="/trinity.png" subtitle="High School"
@@ -65,11 +65,11 @@ export default () => (
   							 footer="2008 - 2013 | Sydney, AU">
   					<DescriptionHeading>Responsibilities</DescriptionHeading>
   					<UnorderedList>
-  						<ListItem>Jack All</ListItem>
+  						<ListItem>PLACHOLDER TEXT</ListItem>
   					</UnorderedList>
   					<DescriptionHeading>Achievements</DescriptionHeading>
   					<UnorderedList>
-  						<ListItem>None</ListItem>
+  						<ListItem>PLACHOLDER TEXT</ListItem>
   					</UnorderedList>
   				</Event>		
   			</EventContainer>

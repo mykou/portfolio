@@ -1,5 +1,5 @@
 {
-  "name": "Michael Liu Portfolio",
+  "name": "michael-liu-portfolio",
   "private": true,
   "description": "Online portfolio",
   "version": "0.1.0",
@@ -35,13 +35,17 @@
   },
   "devDependencies": {
     "gatsby-plugin-root-import": "^2.0.5",
+    "gh-pages": "^2.1.1",
     "prettier": "^1.18.2"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+    "url": "https://github.com/mykou/portfolio"
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "scripts": {
+    "deploy": "gatsby build && gh-pages -d public -b master"
   }
 }
