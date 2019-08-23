@@ -27,14 +27,17 @@ const DescriptionHeading = styled.span`
 const UnorderedList = styled.ul`
 	margin-top: 0.5rem;
 `
+const Item = styled.li`
+  margin-bottom: calc(0.5rem / 2);
+`
 
 function ListItem(props){
   return (
-    <li>
+    <Item>
       <span>
         {props.children}
       </span>
-    </li>
+    </Item>
   )
 }
 
@@ -46,31 +49,23 @@ export default () => (
   				<Event logoUrl="/unsw.png" subtitle="Undergraduate Education"
   							 title="University of New South Wales" website="https://www.unsw.edu.au/"
   							 footer="2014 - 2018 | Sydney, AU">
-  					<p>
+  					<h4>Bachelor of Engineering (Software&nbsp;Engineering)</h4>
+            <p>
               Learnt about the processes, method and tools for the design and development of high quality, reliable software systems.
               It involved the study and application of software specification, design, implementation, testing and documentation.
               The degree also included a series of workshops that helped us work inteams and gain hands-on experience.     
             </p>
             <DescriptionHeading>Awards & Achievements</DescriptionHeading>
   					<UnorderedList>
-  						<ListItem>PLACHOLDER TEXT</ListItem>
-  					</UnorderedList>
-  					<DescriptionHeading>Achievements</DescriptionHeading>
-  					<UnorderedList>
-  						<ListItem>PLACHOLDER TEXT</ListItem>
-  					</UnorderedList>
+  						<ListItem>Honours Class 2 Division 1</ListItem>
+              <ListItem>The Macquarie SENG2020 Group Prize 2015<br/>
+                        <i>For the best presentation by a group in 
+                        SENG2020 Software Engineering Workshop 2B</i></ListItem>
+  					</UnorderedList>  					
   				</Event>
   				<Event logoUrl="/trinity.png" subtitle="High School"
   							 title="Trinity Grammar School" website="https://www.trinity.nsw.edu.au/"
   							 footer="2008 - 2013 | Sydney, AU">
-  					<DescriptionHeading>Responsibilities</DescriptionHeading>
-  					<UnorderedList>
-  						<ListItem>PLACHOLDER TEXT</ListItem>
-  					</UnorderedList>
-  					<DescriptionHeading>Achievements</DescriptionHeading>
-  					<UnorderedList>
-  						<ListItem>PLACHOLDER TEXT</ListItem>
-  					</UnorderedList>
   				</Event>		
   			</EventContainer>
   		</Content>

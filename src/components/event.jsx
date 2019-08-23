@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 const breakpoints = {
 	xs: '480px',
-	sm: '768px'
+	sm: '992px'
 }
 
 const EventWrapper = styled.div`
@@ -65,6 +65,9 @@ const Subtitle = styled.span`
 const EventDescription = styled.div`
 	margin: 1rem;
 	font-size:0.8rem;
+	&.contentless {
+		margin: 0;
+	}
 `
 
 const EventFooter = styled.div`
@@ -86,7 +89,7 @@ export default (props) => (
 			<EventTitle target="_blank" href={props.website}>{props.title}</EventTitle>
 			<Subtitle>{props.subtitle}</Subtitle>
 		</EventHeader>
-		<EventDescription>
+		<EventDescription className={props.children ? '' : 'contentless'}>
 			{props.children}
 		</EventDescription>
 		<EventFooter>
