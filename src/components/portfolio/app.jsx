@@ -13,6 +13,7 @@ class App extends React.Component {
 			<>
 				<Helmet>
           <meta charSet="utf-8" />
+          <meta http-equiv="cache-control" content="public, max-age=0, must-revalidate"/>
           <title>Michael Liu</title>          
         </Helmet>
 				<Introduction/>	
