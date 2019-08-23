@@ -162,9 +162,9 @@ class Navbar extends React.Component {
     window.removeEventListener('resize', this.handleResize);
     window.removeEventListener('scroll', this.handleScroll);
   }
-
   
-	handleClickOutside = (e) => {				
+	handleClickOutside = (e) => {
+		if (!this.state.toggle) return;				
 		if (this.navbar && !this.navbar.current.contains(e.target)){
 			this.setState(state => ({
 				toggle: false
@@ -178,14 +178,15 @@ class Navbar extends React.Component {
 		}))
   }
 
-  handleScroll = (e) => {
+  handleScroll = (e) => {  	
   	const offset = this.state.jumpOffset;
   	const currentPos = window.scrollY;
   	const visible = (currentPos >= offset);
+  	if (visible === this.state.visible) return;  	
 		this.setState(state => ({
 			visible: visible
 		}))
-  	if (visible === true){
+  	if (!this.state.viewedIntro && visible === true){
   		this.setState(state => ({
   			viewedIntro: true
   		}))
@@ -201,7 +202,7 @@ class Navbar extends React.Component {
 		}		
 	}
 
-	render() {
+	render() {		
 		let topBtnClass = '';
 		if (this.state.visible) topBtnClass += ' show';
 		if (this.state.viewedIntro) topBtnClass += ' viewed';		
@@ -219,19 +220,19 @@ class Navbar extends React.Component {
 		      </div>	      
 					<LeftMenu className={this.state.toggle ? 'show' : ''}>						
 						<MenuLink activeClass="active" to="about-section" onClick={this.toggleMenu}
-											spy={true} smooth={true} duration={500}>
+											spy={true} smooth={true} duration={250}>
 							About
 						</MenuLink>
 						<MenuLink activeClass="active" to="skills-section" onClick={this.toggleMenu}
-											spy={true} smooth={true} duration={500}>
+											spy={true} smooth={true} duration={250}>
 							Skills
 						</MenuLink>
 						<MenuLink activeClass="active" to="experience-section" onClick={this.toggleMenu}
-											spy={true} smooth={true} duration={500}>
+											spy={true} smooth={true} duration={250}>
 							Experience
 						</MenuLink>
 						<MenuLink activeClass="active" to="education-section" onClick={this.toggleMenu}
-											spy={true} smooth={true} duration={500}>
+											spy={true} smooth={true} duration={250}>
 							Education
 						</MenuLink>
 						<DownloadLink target="_blank" 

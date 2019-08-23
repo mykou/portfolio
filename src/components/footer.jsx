@@ -21,7 +21,7 @@ const ArrowContainer = styled.div`
 	margin: 0 auto;
 	position:relative;
 	bottom: 0;
-	animation: 2s ${keyframes`${bounce}`} infinite;
+	animation: 2.5s ${keyframes`${bounce}`} infinite;
 `
  
 export default (props) => (  
