@@ -18,12 +18,14 @@ const Layout = styled.div`
 
 	& p {
 		margin-bottom: 1rem;
-	}
+	}	
 
-	& .section:not(:last-child) {
+	& .section {
 		padding-top: 3rem;
-		padding-bottom: 2rem;
-		position: relative;
+		:not(:last-child){
+			padding-bottom: 2rem;
+			position: relative;	
+		}				
 	}
 
 	& > div:nth-child(odd) {
