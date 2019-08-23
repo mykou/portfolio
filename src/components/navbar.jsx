@@ -235,8 +235,8 @@ class Navbar extends React.Component {
 											spy={true} smooth={true} duration={250}>
 							Education
 						</MenuLink>
-						<DownloadLink target="_blank" 
-													href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/mykou/resume/master/Michael-Liu-Resume.pdf">
+						<DownloadLink target="_self" 
+													href="https://drive.google.com/open?id=0B-T6BmcG7oDeX25WcDhnaEY2eHFCUnlSSktDM29RX3prY3pv">
 							Resume&nbsp;<FaArrowAltCircleDown/>						
 						</DownloadLink>
 					</LeftMenu>
