@@ -228,7 +228,7 @@ class Navbar extends React.Component {
 							Education
 						</MenuLink>
 						<DownloadLink target="_blank" 
-													href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/mykou/resume/master/Michael-Liu-Resume.pdf" >
+													href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/mykou/resume/master/Michael-Liu-Resume.pdf">
 							Resume&nbsp;<FaArrowAltCircleDown/>						
 						</DownloadLink>
 					</LeftMenu>
