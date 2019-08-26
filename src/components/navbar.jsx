@@ -53,10 +53,9 @@ const MenuLink = styled(props => <Link {...props} />)`
 	margin-left: 1rem;
 	display: inline-block;
 	padding: 0.5rem 0;
-	cursor: pointer;
-
+	cursor: pointer;  
 	&.active {
-		box-shadow: 0 4px 2px -2px #1ca086;
+    box-shadow: 0 2px 0px 0px #1ca086;    
 		@media only screen and (max-width: ${breakpoints["xs"]}) {
 			box-shadow: -0.25rem 0px 0px ;
 			margin-left:0.25rem;

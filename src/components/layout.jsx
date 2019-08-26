@@ -38,7 +38,7 @@ const Layout = styled.div`
 	& a {
 		text-decoration: none;		
 		background-image: none;
-		transition: all 0.7s;					
+		transition: all 0.4s linear;					
 		text-shadow: none;	
 	}
 	& a:hover {		

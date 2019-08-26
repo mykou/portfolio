@@ -56,9 +56,11 @@ export default () => (
         <li>React</li>
         <li>GatsbyJS</li>
         <li>Bootstrap</li>
-        <li>Django</li>
-        <li>Microsoft Windows</li>
+        <li>Django</li>        
         <li>Microsoft Office</li>
+        <li>Microsoft Windows</li>
+        <li>Ubuntu</li>
+        <li>macOS</li>
       </TagList>     
   	</Content>
   	<Footer to="experience-section"/>

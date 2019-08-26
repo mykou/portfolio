@@ -28,7 +28,7 @@ const IntroWrapper = styled.div`
 const Picture = styled.img`
 	height: 40vw;
 	border-radius: 50%;
-	max-height: 200px;
+	max-height: 400px;
 	margin: 1rem 0;
 `
 
@@ -76,7 +76,7 @@ class Introduction extends React.Component {
 				<Navbar/>
 				<Main>
 					<IntroWrapper>
-						<Picture src='/blank-profile.png' alt='Picture of me'/>
+						<Picture src='/me.png' alt='Picture of me'/>
 						<Greeting>Hello, I'm Michael!</Greeting>
 						<TagLine/>
 						<SocialIcons/>
