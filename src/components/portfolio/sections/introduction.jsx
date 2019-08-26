@@ -28,7 +28,8 @@ const IntroWrapper = styled.div`
 const Picture = styled.img`
 	height: 40vw;
 	border-radius: 50%;
-	max-height: 400px;	
+	max-height: 400px;
+	margin-bottom: 0;	
 	@media only screen and (max-width: 1368px) {
 			max-height: 225px;
 		}
