@@ -63,6 +63,7 @@ export default () => (
                 Working closely with our product specialists and QA teams to develop solutions 
                 suitable for new and existing users
               </ListItem>
+              <ListItem>Ensuring smooth go-lives by resolving critical issues</ListItem>
               <ListItem>
                 Communicating and working with clients to understand their issues, 
                 and to create a solution tailored to their needs
@@ -72,8 +73,7 @@ export default () => (
   					<DescriptionHeading>Achievements</DescriptionHeading>
   					<UnorderedList>
   						<ListItem>Designed and created the company’s on-call roster management system</ListItem>
-              <ListItem>Became the main interface/integration engineer from having no experience</ListItem>
-              <ListItem>Ensured smooth go-lives by resolving critical issues</ListItem>
+              <ListItem>Became the main interface/integration engineer from having no experience</ListItem>              
   					</UnorderedList>
   				</Event>
   				<Event logoUrl="/cwh.png" subtitle="Pharmacy Assistant"
