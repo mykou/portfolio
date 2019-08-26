@@ -56,7 +56,7 @@ export default () => (
             <p>
               Learnt about the processes, methods and tools for the design and development of high quality, reliable software systems.
               It involved the study and application of software specification, design, implementation, testing and documentation.
-              The degree also included a series of workshops that helped us work inteams and gain hands-on experience.     
+              The degree also included a series of workshops that allowed us to work collaboratively with others and gain hands-on experience.     
             </p>
             <DescriptionHeading>Awards & Achievements</DescriptionHeading>
   					<UnorderedList>

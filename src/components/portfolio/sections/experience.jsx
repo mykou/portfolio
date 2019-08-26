@@ -57,23 +57,24 @@ export default () => (
   					<DescriptionHeading>Role & Responsibilities</DescriptionHeading>
   					<UnorderedList>
   						<ListItem>Main engineer for all integration and interfacing projects/issues</ListItem>
-              <ListItem>Develop new and improve functionality in our core applications</ListItem>
+              <ListItem>Develop new functionality and improve our core applications</ListItem>
               <ListItem>Debugging through our application to patch defects within our product</ListItem>
               <ListItem>
-                Working closely with our product specialists and QA teams to develop solutions 
-                suitable for new and existing users
+                Collaborating with cross-functional teams including our product specialists
+                and QA teams in order to develop innovative solutions
+                for new and existing users
               </ListItem>
               <ListItem>Ensuring smooth go-lives by resolving critical issues</ListItem>
               <ListItem>
-                Communicating and working with clients to understand their issues, 
-                and to create a solution tailored to their needs
+                Identifying clients' needs through consistent communication
+                and providing efficient, accurate and personalised solutions
               </ListItem>
               <ListItem>Providing on-call support for clients</ListItem>
   					</UnorderedList>
   					<DescriptionHeading>Achievements</DescriptionHeading>
   					<UnorderedList>
-  						<ListItem>Designed and created the company’s on-call roster management system</ListItem>
-              <ListItem>Became the main interface/integration engineer from having no experience</ListItem>              
+  						<ListItem>Designed and created our company’s on-call roster management system</ListItem>
+              <ListItem>Became the main interface and integration engineer despite having no previous experience</ListItem>              
   					</UnorderedList>
   				</Event>
   				<Event logoUrl="/cwh.png" subtitle="Pharmacy Assistant"
@@ -82,21 +83,24 @@ export default () => (
   					<DescriptionHeading>Role & Responsibilities</DescriptionHeading>
   					<UnorderedList>
   						<ListItem>
-                Floor manager supervising all floor staff
+                Responsible for the management and daily functions of all floor staff members
               </ListItem>
               <ListItem>
-                Point of escalation to remedy issues raised by customers
+                Discovered innovative solutions to meet customers' needs in a fast paced environment
               </ListItem>
               <ListItem>
-                Responsible for reviewing each aisle to 
+                Reviewed each aisle in order to
                 ensure they were in a satisfactory condition
               </ListItem>
   					</UnorderedList>
   					<DescriptionHeading>Achievements</DescriptionHeading>
   					<UnorderedList>
   						<ListItem>
-                Successfully balanced part-time work with high school 
-                and a full-time study load at university
+                Effectively displayed time-management skills by balancing 
+                part-time work with high school and full-time university studies
+              </ListItem>
+              <ListItem>
+                Promoted to floor manager during time at company
               </ListItem>
   					</UnorderedList>
   				</Event>		
