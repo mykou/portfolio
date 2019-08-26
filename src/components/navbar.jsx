@@ -164,9 +164,9 @@ class Navbar extends React.Component {
 		scrollSpy.update();
 		document.addEventListener('mousedown', this.handleClickOutside);		
 		window.addEventListener('resize', this.handleResize);		
-		window.addEventListener('scroll', this.handleScroll);
+		window.addEventListener('scroll', this.handleScroll);		
 		this.setState(state => ({
-			jumpOffset: this.navbar.current.parentNode.offsetHeight
+			jumpOffset: this.navbar.current.parentNode.parentNode.offsetHeight
 		}))
 	}
 
@@ -185,9 +185,9 @@ class Navbar extends React.Component {
 		}
 	}
 
-	handleResize = (e) => {  	
+	handleResize = (e) => {	
   	this.setState(state => ({
-			jumpOffset: this.navbar.current.parentNode.offsetHeight
+			jumpOffset: this.navbar.current.parentNode.parentNode.offsetHeight
 		}))
   }
 
@@ -233,19 +233,19 @@ class Navbar extends React.Component {
 		      </>	      
 					<LeftMenu className={this.state.toggle ? 'show' : ''}>						
 						<MenuLink activeClass="active" to="about-section" onClick={this.toggleMenu}
-											spy={true} smooth={true} duration={250}>
+											spy={true} smooth={true} duration={500}>
 							About
 						</MenuLink>
 						<MenuLink activeClass="active" to="skills-section" onClick={this.toggleMenu}
-											spy={true} smooth={true} duration={250}>
+											spy={true} smooth={true} duration={500}>
 							Skills
 						</MenuLink>
 						<MenuLink activeClass="active" to="experience-section" onClick={this.toggleMenu}
-											spy={true} smooth={true} duration={250}>
+											spy={true} smooth={true} duration={500}>
 							Experience
 						</MenuLink>
 						<MenuLink activeClass="active" to="education-section" onClick={this.toggleMenu}
-											spy={true} smooth={true} duration={250}>
+											spy={true} smooth={true} duration={500}>
 							Education
 						</MenuLink>
 						<DownloadLink target="_self" 
@@ -257,7 +257,7 @@ class Navbar extends React.Component {
 						  <LinkText>MICHAEL</LinkText>
 					</LogoLink>
 				</Nav>
-				<TopButtonContainer className={topBtnClass}
+				<TopButtonContainer className={topBtnClass} duration={500}
 														to="intro-section" smooth={true}>
 					<FaAngleDoubleUp style={{fontSize: `2rem`}}/>
 					<span><strong>Top</strong></span>
