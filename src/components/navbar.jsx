@@ -16,17 +16,18 @@ const NavContainer = styled.div`
 	width: 100%;
 	position: fixed;
 	top: 0;
-	/*background: rgba(248, 254, 253, .85);*/
-	background: rgba(255, 255, 255, .95);
+	pointer-events: none;
 `
 
-const Nav = styled.nav`
-  margin: 0 auto;  
+const Nav = styled.nav`	
+	background: rgba(255, 255, 255, .95);
+  margin: 0 auto;
+  pointer-events: auto;
 `
 
 const LeftMenu = styled.div`
 	grid-column: 1;
-	align-self: center;
+	align-self: center;	
 	@media only screen and (max-width: ${breakpoints["xs"]}) {		   
 		display: grid;		  	
   	grid-column: 1 / 4;	  	  		 	 
@@ -37,9 +38,9 @@ const LeftMenu = styled.div`
 			height: auto;
 			max-height:200px;
 			transition: max-height 0.4s ease-in-out;
+			box-shadow: 0 4px 4px -2px gray;
 		}		
 	}
-	
 `
 
 const LogoLink = styled(props => <Link {...props} />)`
@@ -98,10 +99,11 @@ const LinkText = styled.span`
 `
 
 const IconContainer = styled.div`	
-	margin: 1rem;	
+	padding: 1rem;	
 `
 
 const TopButtonContainer = styled(props => <Link {...props} />)`
+	pointer-events: auto;
 	position:absolute;	
 	top: calc(100vh - 5rem);	
 	display:flex;
@@ -129,6 +131,17 @@ const TopButtonContainer = styled(props => <Link {...props} />)`
 
 	@media only screen and (max-width: 480px) {
 		width:2.5rem;
+	}
+`
+
+const GreyOut = styled.div`	
+	background: rgba(128,128,128,0);
+	pointer-events: none;	
+	height: 100vh;
+	transition: all 1s;
+	&.show {
+		background: rgba(128,128,128,0.7);
+		display: block;
 	}
 `
 
@@ -208,16 +221,16 @@ class Navbar extends React.Component {
 		if (this.state.viewedIntro) topBtnClass += ' viewed';		
 
 		return (
-			<NavContainer ref={this.navbar}>
-				<Nav>							
-					<div>
+			<NavContainer>
+				<Nav ref={this.navbar}>							
+					<>
 		      <Hamburger>
 		      	<IconContainer>
 		      		<MenuIcon className={this.state.toggle ? 'open' : ''} ref={this.menu}
 		        					onClick={(e) => this.toggleMenu(true,e)}/>
 		      	</IconContainer>     			        
 		      </Hamburger>     
-		      </div>	      
+		      </>	      
 					<LeftMenu className={this.state.toggle ? 'show' : ''}>						
 						<MenuLink activeClass="active" to="about-section" onClick={this.toggleMenu}
 											spy={true} smooth={true} duration={250}>
@@ -248,8 +261,9 @@ class Navbar extends React.Component {
 														to="intro-section" smooth={true}>
 					<FaAngleDoubleUp style={{fontSize: `2rem`}}/>
 					<span><strong>Top</strong></span>
-				</TopButtonContainer>
-			</NavContainer>
+				</TopButtonContainer>				
+				<GreyOut className={this.state.toggle ? 'show' : ''}/>
+			</NavContainer>			
 		)
 	}
 }
