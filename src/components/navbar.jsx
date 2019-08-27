@@ -52,19 +52,23 @@ const LogoLink = styled(props => <Link {...props} />)`
 const MenuLink = styled(props => <Link {...props} />)`
 	margin-left: 1rem;
 	display: inline-block;
-	padding: 0.5rem 0;
-	cursor: pointer;    
+	padding-top: 0.5rem;
+	padding-bottom: 0.4rem;
+	border-bottom: 0.1rem solid white;  
+	cursor: pointer;   
 
-	&.active {
-    box-shadow: 0 2px 0px 0px #1ca086;    
+	&.active {    
+    border-bottom: 0.1rem solid #1ca086;  
 		@media only screen and (max-width: ${breakpoints["xs"]}) {
 			box-shadow: -0.25rem 0px 0px ;
 			margin-left:0.25rem;
 			padding-left:0.75rem;
+			border-bottom: none;
 		}
 	}
 
 	@media only screen and (max-width: ${breakpoints["xs"]}) {
+		border-bottom: none;
 		padding-left: 0;
 		margin-left: 1rem;
 		margin-bottom: 0;
