@@ -51,7 +51,7 @@ export default () => (
   			<EventContainer>
   				<Event logoUrl="/unsw.png" subtitle="Undergraduate Education"
   							 title="University of New South Wales" website="https://www.unsw.edu.au/"
-  							 footer="2014 - 2018 | Sydney, AU">
+  							 footer="2014 - 2018 | Sydney, AU" colorScheme="">
   					<h4>Bachelor of Engineering (Software&nbsp;Engineering)</h4>
             <p>
               Learnt about the processes, methods and tools for the design and development of high quality, reliable software systems.
@@ -68,7 +68,7 @@ export default () => (
   				</Event>
   				<Event logoUrl="/trinity.png" subtitle="High School"
   							 title="Trinity Grammar School" website="https://www.trinity.nsw.edu.au/"
-  							 footer="2008 - 2013 | Sydney, AU">
+  							 footer="2008 - 2013 | Sydney, AU" colorScheme="">
   				</Event>		
   			</EventContainer>
   		</Content>
