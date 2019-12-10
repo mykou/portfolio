@@ -36,7 +36,7 @@ const LeftMenu = styled.div`
 		transition:max-height 1s cubic-bezier(0, 1, 0, 1);
 		&.show {
 			height: auto;
-			max-height:200px;
+			max-height:250px;
 			transition: max-height 0.4s ease-in-out;
 			box-shadow: 0 4px 4px -2px gray;
 		}		
@@ -69,10 +69,10 @@ const MenuLink = styled(props => <Link {...props} />)`
 
 	@media only screen and (max-width: ${breakpoints["xs"]}) {
 		border-bottom: none;
-		padding-left: 0;
+		padding: 0;
 		margin-left: 1rem;
-		margin-bottom: 0;
-		padding: 0.3rem 0;
+		margin-top: 0.3rem;
+		margin-bottom: 0.3rem;
 	}
 `
 
@@ -84,10 +84,10 @@ const DownloadLink = styled.a`
 	float: right;
 
 	@media only screen and (max-width: ${breakpoints["xs"]}) {
-		padding-left: 0;
 		margin-left: 1rem;
-		margin-bottom: 0;
-		padding: 0.3rem 0;
+		margin-top: 0.3rem;
+		margin-bottom: 0.3rem;
+		padding: 0;
 	}
 `
 

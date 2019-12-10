@@ -44,6 +44,7 @@ export default () => (
         <li>Java</li>
         <li>SQL</li>
   			<li>Javascript</li>
+        <li>JSX</li>
         <li>HTML</li>
   			<li>CSS</li>
         <li>JSON</li>

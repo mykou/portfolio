@@ -51,24 +51,31 @@ export default () => (
   			<EventContainer>
   				<Event logoUrl="/unsw.png" subtitle="Undergraduate Education"
   							 title="University of New South Wales" website="https://www.unsw.edu.au/"
-  							 footer="2014 - 2018 | Sydney, AU">
+  							 footer="2014 - 2018 | Sydney, AU" colorScheme="">
   					<h4>Bachelor of Engineering (Software&nbsp;Engineering)</h4>
             <p>
               Learnt about the processes, methods and tools for the design and development of high quality, reliable software systems.
               It involved the study and application of software specification, design, implementation, testing and documentation.
               The degree also included a series of workshops that allowed us to work collaboratively with others and gain hands-on experience.     
-            </p>
+            </p>            
             <DescriptionHeading>Awards & Achievements</DescriptionHeading>
   					<UnorderedList>
   						<ListItem>Honours Class 2 Division 1</ListItem>
               <ListItem>The Macquarie SENG2020 Group Prize 2015<br/>
                         <i>For the best presentation by a group in 
                         SENG2020 Software Engineering Workshop 2B</i></ListItem>
-  					</UnorderedList>  					
+  					</UnorderedList>          
+            <a href="https://github.com/mykou/SVF-Data-Race-Detection-Tool/blob/master/ThesisReport.pdf">
+              Thesis: Static and Dynamic Data Race Detection for C/C++ Programs
+            </a>
+            <br/>
+            <a href="https://github.com/yuleisui/SVF-MTA-EclipsePlugin">
+              SVF-MTA-EclipsePlugin
+            </a>            	
   				</Event>
   				<Event logoUrl="/trinity.png" subtitle="High School"
   							 title="Trinity Grammar School" website="https://www.trinity.nsw.edu.au/"
-  							 footer="2008 - 2013 | Sydney, AU">
+  							 footer="2008 - 2013 | Sydney, AU" colorScheme="">
   				</Event>		
   			</EventContainer>
   		</Content>

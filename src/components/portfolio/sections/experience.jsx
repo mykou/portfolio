@@ -53,7 +53,7 @@ export default () => (
   			<EventContainer>
   				<Event logoUrl="/iss.png" subtitle="Application Programmer"
   							 title="Integrated Software Solutions" website="https://intsoftsol.com"
-  							 footer="Apr 2017 - Current | Sydney, AU" colorScheme="dark">
+  							 footer="Apr 2017 - Current | Sydney, AU" >
   					<DescriptionHeading>Role & Responsibilities</DescriptionHeading>
   					<UnorderedList>
   						<ListItem>Main engineer for all integration and interfacing projects/issues</ListItem>
@@ -79,7 +79,7 @@ export default () => (
   				</Event>
   				<Event logoUrl="/cwh.png" subtitle="Pharmacy Assistant"
   							 title="Chemist Warehouse" website="https://www.chemistwarehouse.com.au/"
-  							 footer="Jun 2011 - Apr 2017 | Sydney, AU" colorScheme="dark">
+  							 footer="Jun 2011 - Apr 2017 | Sydney, AU">
   					<DescriptionHeading>Role & Responsibilities</DescriptionHeading>
   					<UnorderedList>
   						<ListItem>

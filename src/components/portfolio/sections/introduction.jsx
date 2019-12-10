@@ -55,21 +55,20 @@ const TagWrapper = styled.div`
 const Tag = styled.span`
 	padding: .065rem .375rem .125rem;
 `
-function TagLine(){
-	return (
-		<TagContainer>
-			<TagWrapper>
-				<Tag>Full Stack Developer</Tag>
-			</TagWrapper>			
-			<TagWrapper>
-				<Tag>Creator</Tag>
-			</TagWrapper>			
-			<TagWrapper>
-				<Tag>Enthusiast</Tag>
-			</TagWrapper>
-		</TagContainer>
-	)
-}
+const TagLine = () => (
+	<TagContainer>
+		<TagWrapper>
+			<Tag>Full Stack Developer</Tag>
+		</TagWrapper>			
+		<TagWrapper>
+			<Tag>Creator</Tag>
+		</TagWrapper>			
+		<TagWrapper>
+			<Tag>Enthusiast</Tag>
+		</TagWrapper>
+	</TagContainer>
+)
+
 
 
 class Introduction extends React.Component {
