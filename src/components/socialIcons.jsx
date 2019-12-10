@@ -20,7 +20,7 @@ const IconLink = styled.a`
 
 export default () => ( 
 	<IconContainer>
-		<IconLink target="_blank" href="https://www.linkedin.com/in/michael-liu-78200213a/"><FaLinkedin/></IconLink>
+		<IconLink target="_blank" href="https://www.linkedin.com/in/liu-michael/"><FaLinkedin/></IconLink>
 		<IconLink target="_blank" href="mailto:liu.michael.11@gmail.com"><FaEnvelope/></IconLink>
 		<IconLink target="_blank" href="https://github.com/mykou"><FaGithub/></IconLink>
 	</IconContainer>
