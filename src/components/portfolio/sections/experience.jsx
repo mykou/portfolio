@@ -51,9 +51,23 @@ export default () => (
   		<Content className="content">
   			<h2>Experience</h2>
   			<EventContainer>
+          <Event logoUrl="/deputy.png" subtitle="Software Engineer (Implementations)"
+                 title="Deputy" website="https://www.deputy.com/"
+                 footer="Oct 2019 - Feb 2020 | Sydney, AU" >
+            <DescriptionHeading>Role & Responsibilities</DescriptionHeading>
+            <UnorderedList>
+              <ListItem>Develop customised solutions for clients depending on specifications</ListItem>
+              <ListItem>Collaborating with implementation consultants to develop and implement solutions</ListItem>
+              <ListItem>Participate in daily stand-ups and code reviews to ensure quality code</ListItem>
+              <ListItem>
+                Debugging through application to patch defects within our customised solutions
+              </ListItem>
+              <ListItem>Create documentation for the customised solutions to be used by engineers and consultants</ListItem>    
+            </UnorderedList>        
+          </Event>
   				<Event logoUrl="/iss.png" subtitle="Application Programmer"
   							 title="Integrated Software Solutions" website="https://intsoftsol.com"
-  							 footer="Apr 2017 - Current | Sydney, AU" >
+  							 footer="Apr 2017 - Oct 2019 | Sydney, AU" >
   					<DescriptionHeading>Role & Responsibilities</DescriptionHeading>
   					<UnorderedList>
   						<ListItem>Main engineer for all integration and interfacing projects/issues</ListItem>

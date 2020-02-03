@@ -38,21 +38,24 @@ export default () => (
   		<h2>Skills</h2>
   		<h3>Programming Languages</h3>
   		<TagList>
+        <li>Javascript</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>CoffeeScript</li>
+        <li>jQuery</li>
         <li>Caché ObjectScript</li>
   			<li>C</li>
   			<li>C++</li>
         <li>Java</li>
-        <li>SQL</li>
-  			<li>Javascript</li>
+        <li>SQL</li>  			
         <li>JSX</li>
-        <li>HTML</li>
-  			<li>CSS</li>
         <li>JSON</li>
         <li>XML</li>
   			<li>Python</li>
   		</TagList>
       <h3>Technologies</h3>
       <TagList>
+        <li>Git</li>
         <li>Intersystems Ensemble</li>
         <li>React</li>
         <li>GatsbyJS</li>
