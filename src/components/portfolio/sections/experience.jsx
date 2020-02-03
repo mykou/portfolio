@@ -60,7 +60,7 @@ export default () => (
               <ListItem>Collaborating with implementation consultants to develop and implement solutions</ListItem>
               <ListItem>Participate in daily stand-ups and code reviews to ensure quality code</ListItem>
               <ListItem>
-                Debugging through application to patch defects within our customised solutions
+                Work with the support team to debug through the application to patch defects within our customised solutions
               </ListItem>
               <ListItem>Create documentation for the customised solutions to be used by engineers and consultants</ListItem>    
             </UnorderedList>        
