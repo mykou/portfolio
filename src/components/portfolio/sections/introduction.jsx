@@ -55,23 +55,19 @@ const TagWrapper = styled.div`
 const Tag = styled.span`
 	padding: .065rem .375rem .125rem;
 `
-const TagLine = () => (
+
+const TagLine = (props) => (
 	<TagContainer>
-		<TagWrapper>
-			<Tag>Full Stack Developer</Tag>
-		</TagWrapper>			
-		<TagWrapper>
-			<Tag>Creator</Tag>
-		</TagWrapper>			
-		<TagWrapper>
-			<Tag>Enthusiast</Tag>
-		</TagWrapper>
+		{props.tags.map(item => (
+			<TagWrapper>
+				<Tag>{item}</Tag>
+			</TagWrapper>	
+		))}
 	</TagContainer>
 )
 
-
-
 class Introduction extends React.Component {
+	//arrTags = ['Full Stack Developer', 'Creator', 'Enthusiast'];
 	render() {
 		return (
 			<IntroductionContainer id="intro-section">
@@ -80,7 +76,7 @@ class Introduction extends React.Component {
 					<IntroWrapper>
 						<Picture src='/me.png' alt='Picture of me'/>
 						<Greeting>Hello, I'm Michael!</Greeting>
-						<TagLine/>
+						<TagLine tags={['Full Stack Developer', 'Creator', 'Enthusiast']}/>
 						<SocialIcons/>
 					</IntroWrapper>
 				</Main>				
